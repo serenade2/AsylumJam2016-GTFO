@@ -53,10 +53,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AlignTiles: 0
   Generate: 0
-  FloorPrefab: {fileID: 1000010658018258, guid: 82c60454a519dad4088c3e0105f31d26,
+  FloorPrefab: {fileID: 1000012149527812, guid: cefbbe63867e8bd4a98ebacba2b3ae5a,
     type: 2}
-  WallPrefab: {fileID: 1000013579272080, guid: b53a99f5285b7a84bbce707daa55cfd1, type: 2}
+  Wall3DPrefab: {fileID: 1000013928343762, guid: 20ef5f7a69a1a43488dc9682d12172e9,
+    type: 2}
+  Wall2DPrefab: {fileID: 1000013579272080, guid: b53a99f5285b7a84bbce707daa55cfd1,
+    type: 2}
   DoorPrefab: {fileID: 1000011468029946, guid: 31996fac1c5c68b43a2b838789d4c11a, type: 2}
   RoomId: 0
-  RoomSizeX: 1
-  RoomSizeY: 1
+  RoomSizeX: 5
+  RoomSizeY: 5

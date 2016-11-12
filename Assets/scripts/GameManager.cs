@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     public bool Generate;
 
     public GameObject FloorPrefab;
-    public GameObject WallPrefab;
+    public GameObject Wall3DPrefab;
+    public GameObject Wall2DPrefab;
     public GameObject DoorPrefab;
     public int RoomId = 0;
     public int RoomSizeX = 1;
@@ -65,11 +66,15 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
-                        GameObject wall = Instantiate(WallPrefab);
-                        wall.transform.parent = Room.transform;
-                        wall.name = "Wall " + i + "x" + j;
-                        float size = wall.GetComponent<Renderer>().bounds.size.x;
-                        wall.transform.localPosition = new Vector3(i * size, j * size);
+                        GameObject wall3D = Instantiate(Wall3DPrefab);
+                        wall3D.transform.parent = Room.transform;
+                        wall3D.name = "Wall " + i + "x" + j;
+                        float size = wall3D.GetComponent<Renderer>().bounds.size.x;
+                        wall3D.transform.localPosition = new Vector3(i * size, j * size);
+                        GameObject wall2D = Instantiate(Wall2DPrefab);
+                        wall2D.transform.parent = wall3D.transform;
+                        wall2D.name = "Wall Sprite " + i + "x" + j;
+                        wall2D.transform.localPosition = new Vector3(0, 0, -0.5f);
                     }
                 }
                 else
