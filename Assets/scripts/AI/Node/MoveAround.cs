@@ -22,7 +22,9 @@ public class MoveAround : ActionNode
     // This function is called when the node is in execution
     public override Status Update()
     {
-        Vector2 movement_vector = new Vector2(1.0f, 0.0f);
+        self.GetComponent<GlobalAttributes>().set_movement_vector(new Vector2(1.0f, 0.0f));
+        var movement_vector = self.GetComponent<GlobalAttributes>().movement_vector;
+        
 
         if (movement_vector != Vector2.zero)
         {
