@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour
     protected void OnAlignClicked()
     {
         Align();
+        Align();
     }
 
     protected void OnGenerateClicked()

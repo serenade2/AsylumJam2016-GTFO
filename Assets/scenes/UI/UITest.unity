@@ -235,6 +235,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 370190695}
   - 114: {fileID: 370190694}
+  - 114: {fileID: 370190696}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -280,6 +281,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &370190696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370190693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f60b9af347cc4748aa73f17dbaf641c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  song: {fileID: 8300000, guid: 1930d733f88ad0c498045c75896a9b03, type: 3}
+  minimumPitch: 0.95
+  maximumPitch: 1.05
+  soundCapacity: 10
 --- !u!1 &384162616
 GameObject:
   m_ObjectHideFlags: 0
