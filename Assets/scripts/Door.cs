@@ -31,38 +31,6 @@ public class Door : MonoBehaviour
 	    }
 	}
 
-    void OnCollisionEnter2D(Collision2D coll)
-    {
-        if (coll.gameObject.tag.Equals("Player"))
-        {
-            _playerMovement = coll.gameObject.GetComponent<PlayerMovement>();
-            if (_playerMovement != null && _spriteRenderer != null)
-            {
-                if (_playerMovement.IsMovingUp)
-                {
-                    _spriteRenderer.sprite = HorizontalDoorOpenedSprite;
-                }
-                else if (_playerMovement.IsMovingDown)
-                {
-                    
-                }
-                else if (_playerMovement.IsMovingLeft)
-                {
-                    
-                }
-                else if (_playerMovement.IsMovingRight)
-                {
-                    
-                }
-            }
-            Debug.Log(String.Format("{0} collision entered in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
-        }
-        else if (coll.gameObject.tag.Equals("Enemy"))
-        {
-            Debug.Log(String.Format("{0} collision entered in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
-        }
-    }
-
     void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject.tag.Equals("Player"))
@@ -79,6 +47,7 @@ public class Door : MonoBehaviour
                     _spriteRenderer.sprite = VerticalDoorOpenedSprite;
                 }
             }
+
             Debug.Log(String.Format("{0} collision entered in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
         }
         else if (coll.gameObject.tag.Equals("Enemy"))
