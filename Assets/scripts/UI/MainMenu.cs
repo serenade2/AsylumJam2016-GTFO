@@ -6,15 +6,15 @@ public class MainMenu : MonoBehaviour {
 
     public string firstLevel = "UITest";
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    // Use this for initialization
+    void Start() {
+
+    }
+
+    // Update is called once per frame
+    void Update() {
+
+    }
 
     // Load first level of the game
     public void LoadStartingLevel()
@@ -26,5 +26,11 @@ public class MainMenu : MonoBehaviour {
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    // Shown Credits screen
+    public void ShowCredits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 }
