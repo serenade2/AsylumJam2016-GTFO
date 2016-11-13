@@ -6,18 +6,26 @@ public class CharacterCollision : MonoBehaviour
 {
     private Door door;
     public int pushPower = 5;
+    private Collider2D touchedFurniture;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start()
     {
 
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    }
+
+    // Update is called once per frame
+    void Update()
     {
-	
-	}
+        if (Input.GetKey(KeyCode.P) && touchedFurniture != null)
+        {
+            Vector3 direction = transform.position - touchedFurniture.transform.position;
+
+            touchedFurniture.attachedRigidbody.velocity = -direction * pushPower;
+
+            touchedFurniture = null;
+        }
+    }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
@@ -31,7 +39,9 @@ public class CharacterCollision : MonoBehaviour
         }
         else if (coll.gameObject.tag.Equals("Furniture"))
         {
-            if(Input.GetKey(KeyCode.P))
+            touchedFurniture = coll.collider;
+
+            if (Input.GetKey(KeyCode.P))
             {
                 Vector3 direction = transform.position - coll.transform.position;
 
@@ -50,6 +60,10 @@ public class CharacterCollision : MonoBehaviour
         {
             Debug.Log(String.Format("{0} entered in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
         }
+        else if (coll.gameObject.tag.Equals("Furniture"))
+        {
+            touchedFurniture = coll;
+        }
     }
 
     void OnTriggerExit2D(Collider2D coll)
@@ -62,6 +76,10 @@ public class CharacterCollision : MonoBehaviour
         {
             Debug.Log(String.Format("{0} trigger exited from collision with {1}", this.gameObject.tag, coll.gameObject.tag));
         }
+        else if (coll.gameObject.tag.Equals("Furniture"))
+        {
+            touchedFurniture = null;
+        }
     }
 
     void OpenDoor(GameObject doorGameObject)
@@ -71,19 +89,6 @@ public class CharacterCollision : MonoBehaviour
         {
             door.OpenDoor();
         }
-    }
-
-    void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        Rigidbody body = hit.collider.attachedRigidbody;
-        if (body == null || body.isKinematic)
-            return;
-
-        if (hit.moveDirection.y < -0.3F)
-            return;
-
-        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
-        body.velocity = pushDir * pushPower;
     }
 
 }
