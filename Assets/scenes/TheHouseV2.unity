@@ -4677,7 +4677,7 @@ Prefab:
     - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
         type: 2}
       propertyPath: SoundList.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4000013490964184, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4772,6 +4772,11 @@ Prefab:
       propertyPath: GameOverMessage
       value: 
       objectReference: {fileID: 19331798}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2e00292300f4ff14598b94c895014d32, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
   m_IsPrefabParent: 0
