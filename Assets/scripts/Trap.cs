@@ -31,6 +31,7 @@ public class Trap : MonoBehaviour
 	        {
                 // release the player after the cool down of the specific trap
 	            _playerMovement.isTrapped = false;
+	            _characterIsTrapped = false;
 	        }
 	    }
 	}
