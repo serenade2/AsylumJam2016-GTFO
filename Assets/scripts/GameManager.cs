@@ -149,7 +149,8 @@ public class GameManager : MonoBehaviour
 
     public void TriggerGameOverEvent()
     {
-        StartCoroutine(TriggerGameOver());
+        if (_isTimeStopped == false)
+            StartCoroutine(TriggerGameOver());
     }
 
     private IEnumerator TriggerGameOver()
