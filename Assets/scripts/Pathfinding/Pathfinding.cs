@@ -41,8 +41,36 @@ public class Pathfinding : MonoBehaviour
                 {
                     float nbSecPass = GameManager.Instance.GetTime();
                     float realSpeed = Speed + SpeedIncreasePerMinute / 60 * nbSecPass;
+                    Vector3 seekPositionVector3 = seeker.position;
+                    float xSeek = seekPositionVector3.x;
+                    float ySeek = seekPositionVector3.y;
 
                     seeker.position = Vector3.MoveTowards(seeker.position, pathToTarget[0].worldPosition, realSpeed * Time.deltaTime);
+                    Vector2 movementVector2 = Vector2.zero;
+
+                    if (seeker.position.x > xSeek)
+                    {
+                        //if true then moving right
+                        movementVector2.x = 1.0f;
+                    }
+                    else if (seeker.position.x < xSeek)
+                    {
+                        // moving left
+                        movementVector2.x = -1.0f;
+                    }
+                    if (seeker.position.y > ySeek)
+                    {
+                        //if true then moving up
+                        movementVector2.y = 1.0f;
+                    }
+                    else if (seeker.position.y < ySeek)
+                    {
+                        // moving down
+                        movementVector2.y = -1.0f;
+                    }
+
+                    _globalAttributes.set_movement_vector(movementVector2);
+
                 }
             }
             
