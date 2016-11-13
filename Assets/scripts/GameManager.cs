@@ -1,14 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using BehaviourMachine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { get; private set; }  // Singleton
+
+    [InspectorButton("OnGameOverClicked")]
+    public bool GameOver;
+
     [InspectorButton("OnAlignClicked")]
     public bool AlignTiles;
 
     [InspectorButton("OnGenerateClicked")]
     public bool Generate;
 
+    public Image GameOverBackground;
+    public Image GameOverMessage;
+    public BarProgresser ProgressBar;
     public GameObject FloorPrefab;
     public GameObject Wall3DPrefab;
     public GameObject Wall2DPrefab;
@@ -16,6 +27,25 @@ public class GameManager : MonoBehaviour
     public int RoomId = 0;
     public int RoomSizeX = 1;
     public int RoomSizeY = 1;
+    private float _timer = 0.0f;
+    private bool _isTimeStopped;
+
+    void Awake()
+    {
+        _isTimeStopped = false;
+        Instance = this;
+    }
+
+    void FixedUpdate()
+    {
+        if (!_isTimeStopped)
+             _timer += Time.fixedDeltaTime;
+    }
+
+    public float GetTime()
+    {
+        return _timer;
+    }
 
     private void Align()
     {
@@ -101,5 +131,50 @@ public class GameManager : MonoBehaviour
     protected void OnGenerateClicked()
     {
         GenerateRoom();
+    }
+
+    protected void OnGameOverClicked()
+    {
+        StartCoroutine(TriggerGameOver());
+    }
+
+    public void TriggerEndingEvent()
+    {
+        StartCoroutine(TriggerWin());
+    }
+
+    private IEnumerator TriggerWin()
+    {
+        yield return new WaitForSeconds(3.0f);
+    }
+
+    public void TriggerGameOverEvent()
+    {
+        StartCoroutine(TriggerGameOver());
+    }
+
+    private IEnumerator TriggerGameOver()
+    {
+        _isTimeStopped = true;
+        Sound.Instance.PlaySound(0);
+        Camera.main.GetComponent<GameOverShading>().IsShading = true;
+        yield return new WaitForSeconds(5);
+        Camera.main.GetComponent<GameOverShading>().IsShading = false;
+
+        if (GameOverBackground != null && GameOverMessage != null)
+        {
+            GameOverBackground.color = Color.black;
+            while (GameOverMessage.color.a <= 1)
+            {
+                GameOverMessage.color = new Color(GameOverMessage.color.r, 
+                    GameOverMessage.color.g, 
+                    GameOverMessage.color.b, 
+                    GameOverMessage.color.a + 0.1f);
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("UI/MainMenu");
     }
 }
