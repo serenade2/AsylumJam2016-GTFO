@@ -120,7 +120,7 @@ Material:
       second: 1
     - first:
         name: __Time
-      second: 0
+      second: 1000
     - first:
         name: attenuationRate
       second: 3
