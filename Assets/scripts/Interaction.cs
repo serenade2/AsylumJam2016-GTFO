@@ -4,7 +4,7 @@ using System.Collections;
 public class Interaction : MonoBehaviour
 {
     private Transform _parentLookingDirection;
-    private float _offsetDistance;
+    public  float _offsetDistance;
 	// Use this for initialization
 	void Start ()
 	{
