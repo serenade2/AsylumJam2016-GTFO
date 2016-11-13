@@ -45,9 +45,9 @@
 
 	fixed4 frag(v2f_img i) : SV_Target
 	{
-		fixed2 cord = -1.0 + 2.0 * i.uv;
-	cord.x += pY - 0.5;
-	cord.y += -pX + 0.5;
+		fixed2 cord = i.uv; //= -1.0 + 2.0 * i.uv;
+	cord.x += -pY;// +0.5;
+	cord.y += -pX;// +0.5;
 	fixed len = length(cord);
 	cord = i.uv + (cord / len*depth)*cos(len*12.0 / size - __Time*speed)*0.03 / exp2(__Time * attenuationRate);
 	fixed4 color = tex2D(_MainTex, cord);
