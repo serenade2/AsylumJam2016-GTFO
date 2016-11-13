@@ -8,7 +8,9 @@ public class Pathfinding : MonoBehaviour
     public Transform seeker, target;
     public Rigidbody2D rbodySeeker;
     public float Speed;
-
+    private bool _enemyTrappedStatus;
+    public GameObject EnemyGameObject;
+    private GlobalAttributes _globalAttributes;
     Grid grid;
     public List<Node> pathToTarget;
 
@@ -17,6 +19,10 @@ public class Pathfinding : MonoBehaviour
         grid = GetComponent<Grid>();
     }
 
+    void Start()
+    {
+        grid = GetComponent<Grid>();
+    }
 
    
     void Update()
@@ -25,7 +31,17 @@ public class Pathfinding : MonoBehaviour
 
         if(pathToTarget.Count > 1)
         {
-            seeker.position = Vector3.MoveTowards(seeker.position, pathToTarget[0].worldPosition, Speed * Time.deltaTime);
+            // check if the enemy is trapped
+            _globalAttributes = EnemyGameObject.GetComponent<GlobalAttributes>();
+            if (_globalAttributes != null)
+            {
+                //sound.instance.playSound(3,4)
+                if (!_globalAttributes.IsTrapped)
+                {
+                    seeker.position = Vector3.MoveTowards(seeker.position, pathToTarget[0].worldPosition, Speed * Time.deltaTime);
+                }
+            }
+            
         }
     }
 
