@@ -86,7 +86,7 @@ public class Trap : MonoBehaviour
                 _globalAttributes.IsTrapped = true;
                 _spriteRenderer.sprite = ActivatedSprite;
 
-                _playerIsTrapped = true;
+                _enemyIsTrapped = true;
                 _startElapsedTime = Time.time;
                 CenterTrappedCharacter(coll.gameObject);
             }
