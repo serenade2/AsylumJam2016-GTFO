@@ -12,7 +12,7 @@ public class Ending : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        float timeTotal = 150; // GameManager.Instance.GetTime();
+        float timeTotal = GameManager.Instance.GetTime();
         int minutes = (int)timeTotal / 60;
         int seconds = (int)timeTotal % 60;
 

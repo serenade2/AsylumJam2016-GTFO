@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Linq;
 using BehaviourMachine;
-using UnityEditor;
 
 public class WallUpdater : MonoBehaviour
 {
