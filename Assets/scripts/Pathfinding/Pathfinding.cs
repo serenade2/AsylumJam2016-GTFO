@@ -8,6 +8,7 @@ public class Pathfinding : MonoBehaviour
     public Transform seeker, target;
     public Rigidbody2D rbodySeeker;
     public float Speed;
+    public float SpeedIncreasePerMinute = 0.2f;
     private bool _enemyTrappedStatus;
     public GameObject EnemyGameObject;
     private GlobalAttributes _globalAttributes;
@@ -38,7 +39,10 @@ public class Pathfinding : MonoBehaviour
                 //sound.instance.playSound(3,4)
                 if (!_globalAttributes.IsTrapped)
                 {
-                    seeker.position = Vector3.MoveTowards(seeker.position, pathToTarget[0].worldPosition, Speed * Time.deltaTime);
+                    float nbSecPass = GameManager.Instance.GetTime();
+                    float realSpeed = Speed + SpeedIncreasePerMinute / 60 * nbSecPass;
+
+                    seeker.position = Vector3.MoveTowards(seeker.position, pathToTarget[0].worldPosition, realSpeed * Time.deltaTime);
                 }
             }
             
