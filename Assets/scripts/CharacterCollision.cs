@@ -7,6 +7,7 @@ public class CharacterCollision : MonoBehaviour
     private Door door;
     public int pushPower = 5;
     private Collider2D touchedFurniture;
+    public Transform Enemy;
 
     // Use this for initialization
     void Start()
@@ -25,6 +26,8 @@ public class CharacterCollision : MonoBehaviour
 
             touchedFurniture = null;
         }
+        if (Vector3.Distance(transform.position, Enemy.position) <= 1.05f)
+            GameManager.Instance.TriggerGameOverEvent();
     }
 
     void OnCollisionEnter2D(Collision2D coll)
