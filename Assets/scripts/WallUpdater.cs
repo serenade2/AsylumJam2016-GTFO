@@ -19,7 +19,7 @@ public class WallUpdater : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Wall")
+        if (coll.gameObject.tag == "WallCollider")
         {
             if (coll.transform.position.x > transform.position.x) // TO THE RIGHT
             {
@@ -72,7 +72,7 @@ public class WallUpdater : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Wall")
+        if (coll.gameObject.tag == "WallCollider")
         {
             if (coll.transform.position.x > transform.position.x) // TO THE RIGHT
             {
@@ -144,7 +144,7 @@ public class WallUpdater : MonoBehaviour
                 GetComponentInParent<SpriteRenderer>().sprite = _sprites.Single(s => s.name == "tileBottom");
                 break;
             case 2:
-                GetComponentInParent<SpriteRenderer>().sprite = _sprites.Single(s => s.name == "tileSideUpRight");
+                GetComponentInParent<SpriteRenderer>().sprite = _sprites.Single(s => s.name == "tileSideUpLeft");
                 break;
             case 3:
                 GetComponentInParent<SpriteRenderer>().sprite = _sprites.Single(s => s.name == "tileBottomLeft");

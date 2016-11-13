@@ -9,6 +9,8 @@ TagManager:
   - Room
   - Door
   - Trap
+  - Enemy
+  - WallCollider
   layers:
   - Default
   - TransparentFX

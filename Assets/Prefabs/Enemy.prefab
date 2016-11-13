@@ -20,15 +20,15 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011039063786}
   - 212: {fileID: 212000013137653696}
-  - 114: {fileID: 114000013019549302}
   - 95: {fileID: 95000010164936194}
-  - 50: {fileID: 50000013206968344}
-  - 61: {fileID: 61000013520012804}
   - 114: {fileID: 114000011047489408}
   - 114: {fileID: 114000013252253934}
+  - 114: {fileID: 114000010104366402}
+  - 61: {fileID: 61000010974150982}
+  - 50: {fileID: 50000012428800428}
   m_Layer: 12
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,7 +46,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &50000013206968344
+--- !u!50 &50000012428800428
 Rigidbody2D:
   serializedVersion: 2
   m_ObjectHideFlags: 1
@@ -54,16 +54,16 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011820950056}
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61000013520012804
+--- !u!61 &61000010974150982
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -72,11 +72,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.2}
+  m_Size: {x: 0.32, y: 0.32}
 --- !u!95 &95000010164936194
 Animator:
   serializedVersion: 3
@@ -94,6 +94,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000010104366402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011820950056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912e4c8ca32424c49addeb1bb167100a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement_vector: {x: 0, y: 0}
+  IsTrapped: 0
+  TrapEffectTime: 0
 --- !u!114 &114000011047489408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,17 +135,6 @@ MonoBehaviour:
   m_FsmEvents: []
   m_ConcreteFsmEvents: []
   m_Namespace: 
---- !u!114 &114000013019549302
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011820950056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c54e57be718cb3f46acdb3a8a1fc33e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000013252253934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +153,7 @@ MonoBehaviour:
   m_HideScript: 1
   m_Position: {x: 0, y: 0}
   m_Transitions: []
-  m_CachedInstanceID: 10442
+  m_CachedInstanceID: 11086
   m_Description: 
   m_IgnoreTimeScale: 0
   m_ResetStatusOnDisable: 1
@@ -158,42 +161,26 @@ MonoBehaviour:
   m_NodeSerialization:
     m_NodeTypes:
     - BehaviourMachine.OnEnable
-    - BehaviourMachine.Timer
-    - MoveAround
     - BehaviourMachine.Update
-    m_NodeTypeHash: 89ef8210c66b91a1fbd4a94489ef8210
-    m_NodeFieldStartIndex: 0000000003000000090000000b0000000e000000
-    m_BranchIndex: ffffffff0000000001000000ffffffff
+    m_NodeTypeHash: 89ef821089ef8210
+    m_NodeFieldStartIndex: 000000000300000006000000
+    m_BranchIndex: ffffffffffffffff
     m_UnityObjectValue: []
-    m_IntValue: 010000000100000004000000030000000200000001000000
-    m_FloatValue:
-    - 5
+    m_IntValue: 01000000010000000200000001000000
+    m_FloatValue: []
     m_StringValue:
     - OnEnable
-    - Timer
-    - BehaviourMachine.ConcreteFloatVar
-    - BehaviourMachine.FsmEvent
-    - MoveAround
     - Update
     m_CurveValue: []
-    m_GenericFieldType:
-    - BehaviourMachine.ConcreteFloatVar
-    m_GenericFieldHash: 264ce8ef
-    m_GenericFieldSize: 01000000
-    m_FieldIndex: 0000000000000000010000000200000001000000000000000000000002000000030000000300000004000000040000000500000005000000
-    m_FieldType: 0100000002000000050000000100000002000000100000000300000011000000110000000100000002000000010000000200000005000000
+    m_GenericFieldType: []
+    m_GenericFieldHash: 
+    m_GenericFieldSize: 
+    m_FieldIndex: 000000000000000001000000020000000100000003000000
+    m_FieldType: 010000000200000005000000010000000200000005000000
     m_FieldPath:
     - instanceID
     - name
     - enabled
-    - instanceID
-    - name
-    - intervalTime
-    - intervalTime.value
-    - storeCurrentTime
-    - timeOverEvent
-    - instanceID
-    - name
     - instanceID
     - name
     - enabled
