@@ -28,19 +28,22 @@ public class GameManager : MonoBehaviour
         {
             floor.transform.position = new Vector3(
                 Mathf.Round(floor.transform.position.x * multiplier) / multiplier,
-                Mathf.Round(floor.transform.position.y * multiplier) / multiplier);
+                Mathf.Round(floor.transform.position.y * multiplier) / multiplier,
+                floor.transform.position.z);
         }
         foreach (GameObject wall in walls)
         {
             wall.transform.position = new Vector3(
                 Mathf.Round(wall.transform.position.x * multiplier) / multiplier,
-                Mathf.Round(wall.transform.position.y * multiplier) / multiplier);
+                Mathf.Round(wall.transform.position.y * multiplier) / multiplier,
+                wall.transform.position.z);
         }
         foreach (GameObject room in rooms)
         {
             room.transform.position = new Vector3(
                 Mathf.Round(room.transform.position.x * multiplier) / multiplier,
-                Mathf.Round(room.transform.position.y * multiplier) / multiplier);
+                Mathf.Round(room.transform.position.y * multiplier) / multiplier,
+                room.transform.position.z);
         }
     }
 
@@ -74,7 +77,7 @@ public class GameManager : MonoBehaviour
                         GameObject wall2D = Instantiate(Wall2DPrefab);
                         wall2D.transform.parent = wall3D.transform;
                         wall2D.name = "Wall Sprite " + i + "x" + j;
-                        wall2D.transform.localPosition = new Vector3(0, 0, -0.5f);
+                        wall2D.transform.localPosition = new Vector3(0, 0, -0.75f);
                     }
                 }
                 else
