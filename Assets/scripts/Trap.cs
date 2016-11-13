@@ -41,7 +41,8 @@ public class Trap : MonoBehaviour
                 _playerMovement.IsTrapped = false;
 	            _playerIsTrapped = false;
 	            _spriteRenderer.sprite = IdleSprite;
-	        }
+                Destroy(gameObject);
+            }
 	    }
 
         if (_enemyIsTrapped)
@@ -57,6 +58,7 @@ public class Trap : MonoBehaviour
                 _globalAttributes.IsTrapped = false;
                 _enemyIsTrapped = false;
                 _spriteRenderer.sprite = IdleSprite;
+                Destroy(gameObject);
             }
         }
     }
