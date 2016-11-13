@@ -90,7 +90,7 @@ Material:
       second: 0
     - first:
         name: _FreqX
-      second: 100
+      second: 87.999954
     - first:
         name: _FreqY
       second: 0
@@ -144,7 +144,7 @@ Material:
       second: 1
     - first:
         name: __Time
-      second: 2.879998
+      second: 1.5599991
     m_Colors:
     - first:
         name: _Color
@@ -154,4 +154,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _TintColor
-      second: {r: 0.12000203, g: -1.879998, b: -1.879998, a: 1}
+      second: {r: 1.4400009, g: -0.5599991, b: -0.5599991, a: 1}

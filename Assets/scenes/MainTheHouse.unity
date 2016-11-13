@@ -69735,6 +69735,11 @@ Prefab:
       propertyPath: EnemyGameObject
       value: 
       objectReference: {fileID: 1323988784}
+    - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: SpeedIncreasePerMinute
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
   m_IsPrefabParent: 0
