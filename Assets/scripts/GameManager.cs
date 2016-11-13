@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using BehaviourMachine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -26,10 +27,24 @@ public class GameManager : MonoBehaviour
     public int RoomId = 0;
     public int RoomSizeX = 1;
     public int RoomSizeY = 1;
+    private float _timer = 0.0f;
+    private bool _isTimeStopped;
 
     void Awake()
     {
+        _isTimeStopped = false;
         Instance = this;
+    }
+
+    void FixedUpdate()
+    {
+        if (!_isTimeStopped)
+             _timer += Time.fixedDeltaTime;
+    }
+
+    public float GetTime()
+    {
+        return _timer;
     }
 
     private void Align()
@@ -123,6 +138,16 @@ public class GameManager : MonoBehaviour
         StartCoroutine(TriggerGameOver());
     }
 
+    public void TriggerEndingEvent()
+    {
+        StartCoroutine(TriggerWin());
+    }
+
+    private IEnumerator TriggerWin()
+    {
+        yield return new WaitForSeconds(3.0f);
+    }
+
     public void TriggerGameOverEvent()
     {
         StartCoroutine(TriggerGameOver());
@@ -130,6 +155,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator TriggerGameOver()
     {
+        _isTimeStopped = true;
         Sound.Instance.PlaySound(0);
         Camera.main.GetComponent<GameOverShading>().IsShading = true;
         yield return new WaitForSeconds(5);
