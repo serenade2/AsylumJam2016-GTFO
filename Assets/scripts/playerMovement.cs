@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rbody;
     Animator anim;
-    public bool isTrapped = false;
+    public bool IsTrapped = false;
 
 	void Start ()
     {
@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-	    if (!isTrapped)
+	    if (!IsTrapped)
 	    {
             rbody.MovePosition(rbody.position + movement_vector * Time.deltaTime);
         }
