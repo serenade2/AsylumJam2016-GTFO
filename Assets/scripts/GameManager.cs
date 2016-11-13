@@ -33,7 +33,11 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         _isTimeStopped = false;
-        Instance = this;
+
+        if (Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     void FixedUpdate()
@@ -140,12 +144,7 @@ public class GameManager : MonoBehaviour
 
     public void TriggerEndingEvent()
     {
-        StartCoroutine(TriggerWin());
-    }
-
-    private IEnumerator TriggerWin()
-    {
-        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("Ending");
     }
 
     public void TriggerGameOverEvent()
@@ -175,11 +174,12 @@ public class GameManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(3.0f);
-        SceneManager.LoadScene("UI/MainMenu");
+        SceneManager.LoadScene("Ending");
     }
 
     public void ExplodeAtLocation(Vector3 position)
     {
+        Sound.Instance.PlaySound(1);
         Camera.main.GetComponent<ExplosionShading>().FireExplosion(position);
     }
 }

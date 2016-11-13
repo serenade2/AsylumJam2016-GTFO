@@ -110,7 +110,7 @@ public class Door : MonoBehaviour
                 }
             }
 
-            Debug.Log(String.Format("{1} exiting smashed the {0}!!!", this.gameObject.tag, coll.gameObject.tag));
+            //Debug.Log(String.Format("{1} exiting smashed the {0}!!!", this.gameObject.tag, coll.gameObject.tag));
         }
     }
 
