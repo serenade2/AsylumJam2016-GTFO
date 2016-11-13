@@ -64,10 +64,12 @@ public class Door : MonoBehaviour
                 if (enemyVectorY == 1.0f || enemyVectorY == -1.0f)
                 {
                     _spriteRenderer.sprite = HorizontalDoorSmashedSprite;
+                    GameManager.Instance.ExplodeAtLocation(transform.position);
                 }
                 else if (enemyVectorX == 1.0f || enemyVectorX == -1.0f)
                 {
                     _spriteRenderer.sprite = VerticalDoorSmashedSprite;
+                    GameManager.Instance.ExplodeAtLocation(transform.position);
                 }
             }
             Debug.Log(String.Format("{1} entering smashed the {0}!!", this.gameObject.tag, coll.gameObject.tag));

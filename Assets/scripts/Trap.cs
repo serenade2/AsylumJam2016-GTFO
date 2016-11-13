@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using Random = UnityEngine.Random;
 
 public class Trap : MonoBehaviour
 {
@@ -47,10 +48,11 @@ public class Trap : MonoBehaviour
         {
             //float elapsedTime = Time.deltaTime;
             //Debug.Log(String.Format("{0} seconds elapsed since character is trapped", _startElapsedTime));
-
+            
             // thanks to :  Mmmpies at : http://answers.unity3d.com/questions/863050/adding-cooldown-c.html
             if (Time.time > _startElapsedTime + TrapEffectTime && _globalAttributes != null)
             {
+                Sound.Instance.PlaySound(3 + (int)Mathf.Round(Random.value));
                 // release the player after the cool down of the specific trap             
                 _globalAttributes.IsTrapped = false;
                 _enemyIsTrapped = false;
