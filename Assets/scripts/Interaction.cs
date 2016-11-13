@@ -105,6 +105,7 @@ public class Interaction : MonoBehaviour
 
     public void PlaceTrap(GameObject trap)
     {
+        Sound.Instance.PlaySound(5);
         GameObject newTrap = Instantiate(trap);
         newTrap.transform.position = _selectedFloor.transform.position;
     }

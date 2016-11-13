@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.058823526, g: 0.058823526, b: 0.058823526, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -189,7 +189,7 @@ GameObject:
   - 50: {fileID: 4361498}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -262,7 +262,7 @@ GameObject:
   - 50: {fileID: 4948274}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -515,7 +515,7 @@ GameObject:
   - 33: {fileID: 18686772}
   - 65: {fileID: 18686771}
   - 23: {fileID: 18686770}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ BoxCollider:
   m_GameObject: {fileID: 18686768}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -679,6 +679,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 19406164}
   - 212: {fileID: 19406165}
+  - 61: {fileID: 19406166}
+  - 50: {fileID: 19406167}
   m_Layer: 0
   m_Name: ChaiseSpriteSheet_1
   m_TagString: Furniture
@@ -712,7 +714,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -732,6 +734,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &19406166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19406163}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+--- !u!50 &19406167
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19406163}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &19568512
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +958,7 @@ GameObject:
   - 33: {fileID: 21327117}
   - 65: {fileID: 21327116}
   - 23: {fileID: 21327115}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -983,7 +1016,7 @@ BoxCollider:
   m_GameObject: {fileID: 21327113}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1007,7 +1040,7 @@ GameObject:
   - 50: {fileID: 23478955}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,7 +1111,7 @@ GameObject:
   - 33: {fileID: 24766693}
   - 65: {fileID: 24766692}
   - 23: {fileID: 24766691}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (13)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1136,7 +1169,7 @@ BoxCollider:
   m_GameObject: {fileID: 24766689}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1330,7 +1363,7 @@ GameObject:
   - 33: {fileID: 32780589}
   - 65: {fileID: 32780588}
   - 23: {fileID: 32780587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1388,7 +1421,7 @@ BoxCollider:
   m_GameObject: {fileID: 32780585}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1506,7 +1539,7 @@ GameObject:
   - 33: {fileID: 38852766}
   - 65: {fileID: 38852765}
   - 23: {fileID: 38852764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1564,7 +1597,7 @@ BoxCollider:
   m_GameObject: {fileID: 38852762}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2206,6 +2239,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 51446130}
   - 212: {fileID: 51446131}
+  - 61: {fileID: 51446132}
+  - 50: {fileID: 51446133}
   m_Layer: 0
   m_Name: ChaiseSpriteSheet_3
   m_TagString: Furniture
@@ -2239,7 +2274,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -2259,6 +2294,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &51446132
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51446129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+--- !u!50 &51446133
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51446129}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &51948446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,7 +2862,7 @@ GameObject:
   - 33: {fileID: 62575247}
   - 65: {fileID: 62575246}
   - 23: {fileID: 62575245}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2854,7 +2920,7 @@ BoxCollider:
   m_GameObject: {fileID: 62575243}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2962,7 +3028,7 @@ GameObject:
   - 33: {fileID: 64552758}
   - 65: {fileID: 64552757}
   - 23: {fileID: 64552756}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x7 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3020,7 +3086,7 @@ BoxCollider:
   m_GameObject: {fileID: 64552754}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3042,7 +3108,7 @@ GameObject:
   - 33: {fileID: 64776385}
   - 65: {fileID: 64776384}
   - 23: {fileID: 64776383}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3100,7 +3166,7 @@ BoxCollider:
   m_GameObject: {fileID: 64776381}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3208,7 +3274,7 @@ GameObject:
   - 33: {fileID: 66460047}
   - 65: {fileID: 66460046}
   - 23: {fileID: 66460045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3266,7 +3332,7 @@ BoxCollider:
   m_GameObject: {fileID: 66460043}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -3386,7 +3452,7 @@ GameObject:
   - 50: {fileID: 67306809}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3545,7 +3611,7 @@ GameObject:
   - 50: {fileID: 72988669}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3618,7 +3684,7 @@ GameObject:
   - 50: {fileID: 77511583}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3959,7 +4025,7 @@ GameObject:
   - 50: {fileID: 81985440}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4288,7 +4354,7 @@ GameObject:
   - 33: {fileID: 87200189}
   - 65: {fileID: 87200188}
   - 23: {fileID: 87200187}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4346,7 +4412,7 @@ BoxCollider:
   m_GameObject: {fileID: 87200185}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4456,7 +4522,7 @@ GameObject:
   - 50: {fileID: 89634945}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4529,7 +4595,7 @@ GameObject:
   - 50: {fileID: 91704432}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4596,6 +4662,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013490964184, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.11
@@ -4649,6 +4720,51 @@ Prefab:
       value: 
       objectReference: {fileID: 1000012149527812, guid: 4534cb56eb496ae4aa976844689f9553,
         type: 2}
+    - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: ProgressBar
+      value: 
+      objectReference: {fileID: 420842811}
+    - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: GameOverBackground
+      value: 
+      objectReference: {fileID: 715602206}
+    - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: GameOverMessage
+      value: 
+      objectReference: {fileID: 608808962}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 89a77a40ed2f29844aa5fb57de0211c3, type: 3}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 348fc249f87193a43a4834477614081e, type: 3}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: fc9fb896d556fd24e8902c7fc48f8505, type: 3}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d4b7e47f429ee54aa09259781fbedea, type: 3}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee3984d17c2854548b020e4d74c8a164, type: 3}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2e00292300f4ff14598b94c895014d32, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
   m_IsPrefabParent: 0
@@ -4663,7 +4779,7 @@ GameObject:
   - 33: {fileID: 100369070}
   - 65: {fileID: 100369069}
   - 23: {fileID: 100369068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4721,7 +4837,7 @@ BoxCollider:
   m_GameObject: {fileID: 100369066}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5271,7 +5387,7 @@ GameObject:
   - 50: {fileID: 109956475}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5622,7 +5738,7 @@ GameObject:
   - 50: {fileID: 113192664}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5781,7 +5897,7 @@ GameObject:
   - 50: {fileID: 116581135}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5852,7 +5968,7 @@ GameObject:
   - 33: {fileID: 118084455}
   - 65: {fileID: 118084454}
   - 23: {fileID: 118084453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5910,7 +6026,7 @@ BoxCollider:
   m_GameObject: {fileID: 118084451}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -5934,7 +6050,7 @@ GameObject:
   - 50: {fileID: 119682400}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6361,7 +6477,7 @@ GameObject:
   - 50: {fileID: 126403998}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7216,7 +7332,7 @@ GameObject:
   - 33: {fileID: 140513467}
   - 65: {fileID: 140513466}
   - 23: {fileID: 140513465}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (7)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7274,7 +7390,7 @@ BoxCollider:
   m_GameObject: {fileID: 140513463}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -7298,7 +7414,7 @@ GameObject:
   - 50: {fileID: 140960081}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7639,7 +7755,7 @@ GameObject:
   - 50: {fileID: 149410046}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7712,7 +7828,7 @@ GameObject:
   - 50: {fileID: 152254419}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7975,7 +8091,7 @@ GameObject:
   - 33: {fileID: 154747997}
   - 65: {fileID: 154747996}
   - 23: {fileID: 154747995}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -8033,7 +8149,7 @@ BoxCollider:
   m_GameObject: {fileID: 154747993}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -8153,7 +8269,7 @@ GameObject:
   - 50: {fileID: 161533028}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8224,7 +8340,7 @@ GameObject:
   - 33: {fileID: 163149921}
   - 65: {fileID: 163149920}
   - 23: {fileID: 163149919}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -8282,7 +8398,7 @@ BoxCollider:
   m_GameObject: {fileID: 163149917}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -8392,7 +8508,7 @@ GameObject:
   - 50: {fileID: 167682539}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8465,7 +8581,7 @@ GameObject:
   - 50: {fileID: 170046722}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8634,7 +8750,7 @@ GameObject:
   - 50: {fileID: 178447845}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8707,7 +8823,7 @@ GameObject:
   - 50: {fileID: 179141069}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8780,7 +8896,7 @@ GameObject:
   - 50: {fileID: 184897973}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8939,7 +9055,7 @@ GameObject:
   - 50: {fileID: 186696289}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9098,7 +9214,7 @@ GameObject:
   - 50: {fileID: 192499162}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9601,7 +9717,7 @@ GameObject:
   - 50: {fileID: 200977867}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9674,7 +9790,7 @@ GameObject:
   - 50: {fileID: 205552710}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10177,7 +10293,7 @@ GameObject:
   - 50: {fileID: 213263408}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10248,7 +10364,7 @@ GameObject:
   - 33: {fileID: 214445008}
   - 65: {fileID: 214445007}
   - 23: {fileID: 214445006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (16)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10306,7 +10422,7 @@ BoxCollider:
   m_GameObject: {fileID: 214445004}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -10426,7 +10542,7 @@ GameObject:
   - 50: {fileID: 214973798}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10679,7 +10795,7 @@ GameObject:
   - 33: {fileID: 219648382}
   - 65: {fileID: 219648381}
   - 23: {fileID: 219648380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10737,7 +10853,7 @@ BoxCollider:
   m_GameObject: {fileID: 219648378}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -11047,7 +11163,7 @@ GameObject:
   - 33: {fileID: 222296950}
   - 65: {fileID: 222296949}
   - 23: {fileID: 222296948}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -11105,7 +11221,7 @@ BoxCollider:
   m_GameObject: {fileID: 222296946}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -11127,7 +11243,7 @@ GameObject:
   - 33: {fileID: 223148785}
   - 65: {fileID: 223148784}
   - 23: {fileID: 223148783}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 6x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -11185,7 +11301,7 @@ BoxCollider:
   m_GameObject: {fileID: 223148781}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -11551,7 +11667,7 @@ GameObject:
   - 33: {fileID: 241205678}
   - 65: {fileID: 241205677}
   - 23: {fileID: 241205676}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -11609,7 +11725,7 @@ BoxCollider:
   m_GameObject: {fileID: 241205674}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -11620,69 +11736,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241205674}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &241479607
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 241479609}
-  - 108: {fileID: 241479608}
-  m_Layer: 0
-  m_Name: Point light (8)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &241479608
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 241479607}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &241479609
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 241479607}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.51, y: 4.34, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
 --- !u!1 &243618245
 GameObject:
   m_ObjectHideFlags: 0
@@ -11878,7 +11931,7 @@ GameObject:
   - 50: {fileID: 253720300}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12061,7 +12114,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013000777408, guid: df0192de3305a814ea1389e6ea6f803f, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000010502053346, guid: df0192de3305a814ea1389e6ea6f803f,
         type: 2}
@@ -12087,7 +12140,7 @@ GameObject:
   - 33: {fileID: 258980982}
   - 65: {fileID: 258980981}
   - 23: {fileID: 258980980}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12145,7 +12198,7 @@ BoxCollider:
   m_GameObject: {fileID: 258980978}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -12169,7 +12222,7 @@ GameObject:
   - 50: {fileID: 260020533}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12414,7 +12467,7 @@ GameObject:
   - 50: {fileID: 267268145}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12485,7 +12538,7 @@ GameObject:
   - 33: {fileID: 270708705}
   - 65: {fileID: 270708704}
   - 23: {fileID: 270708703}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12543,7 +12596,7 @@ BoxCollider:
   m_GameObject: {fileID: 270708701}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -12651,7 +12704,7 @@ GameObject:
   - 33: {fileID: 273055442}
   - 65: {fileID: 273055441}
   - 23: {fileID: 273055440}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 11x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -12709,7 +12762,7 @@ BoxCollider:
   m_GameObject: {fileID: 273055438}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -13085,7 +13138,7 @@ GameObject:
   - 33: {fileID: 283927396}
   - 65: {fileID: 283927395}
   - 23: {fileID: 283927394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -13143,7 +13196,7 @@ BoxCollider:
   m_GameObject: {fileID: 283927392}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -13521,7 +13574,7 @@ GameObject:
   - 50: {fileID: 287419182}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13594,7 +13647,7 @@ GameObject:
   - 50: {fileID: 287658445}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13749,6 +13802,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 292189221}
   - 212: {fileID: 292189222}
+  - 61: {fileID: 292189223}
+  - 50: {fileID: 292189224}
   m_Layer: 0
   m_Name: ChaiseSpriteSheet_0
   m_TagString: Untagged
@@ -13782,7 +13837,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -13802,6 +13857,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &292189223
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 292189220}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+--- !u!50 &292189224
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 292189220}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &294580476
 GameObject:
   m_ObjectHideFlags: 0
@@ -13985,7 +14071,7 @@ GameObject:
   - 33: {fileID: 300796741}
   - 65: {fileID: 300796740}
   - 23: {fileID: 300796739}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -14043,7 +14129,7 @@ BoxCollider:
   m_GameObject: {fileID: 300796737}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -14239,7 +14325,7 @@ GameObject:
   - 50: {fileID: 306072320}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14398,7 +14484,7 @@ GameObject:
   - 50: {fileID: 307348760}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14911,7 +14997,7 @@ GameObject:
   - 50: {fileID: 316824440}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14984,7 +15070,7 @@ GameObject:
   - 50: {fileID: 316892371}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15055,7 +15141,7 @@ GameObject:
   - 33: {fileID: 316956384}
   - 65: {fileID: 316956383}
   - 23: {fileID: 316956382}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 6x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15113,7 +15199,7 @@ BoxCollider:
   m_GameObject: {fileID: 316956380}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -15221,7 +15307,7 @@ GameObject:
   - 33: {fileID: 322661499}
   - 65: {fileID: 322661498}
   - 23: {fileID: 322661497}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15279,7 +15365,7 @@ BoxCollider:
   m_GameObject: {fileID: 322661495}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -15475,7 +15561,7 @@ GameObject:
   - 50: {fileID: 329490375}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15548,7 +15634,7 @@ GameObject:
   - 50: {fileID: 330547129}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15694,69 +15780,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 332473366}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &336081891
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 336081893}
-  - 108: {fileID: 336081892}
-  m_Layer: 0
-  m_Name: Point light (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &336081892
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 336081891}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &336081893
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 336081891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.57, y: 4.02, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
 --- !u!1 &336173504
 GameObject:
   m_ObjectHideFlags: 0
@@ -15856,7 +15879,7 @@ GameObject:
   - 50: {fileID: 337381193}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16023,7 +16046,7 @@ GameObject:
   - 33: {fileID: 340770445}
   - 65: {fileID: 340770444}
   - 23: {fileID: 340770443}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 6x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -16081,7 +16104,7 @@ BoxCollider:
   m_GameObject: {fileID: 340770441}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -16105,7 +16128,7 @@ GameObject:
   - 50: {fileID: 344358647}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16178,7 +16201,7 @@ GameObject:
   - 50: {fileID: 346740959}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16433,7 +16456,7 @@ GameObject:
   - 50: {fileID: 356961131}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16504,7 +16527,7 @@ GameObject:
   - 33: {fileID: 359237271}
   - 65: {fileID: 359237270}
   - 23: {fileID: 359237269}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -16562,7 +16585,7 @@ BoxCollider:
   m_GameObject: {fileID: 359237267}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -16756,7 +16779,7 @@ GameObject:
   - 33: {fileID: 368665114}
   - 65: {fileID: 368665113}
   - 23: {fileID: 368665112}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -16814,7 +16837,7 @@ BoxCollider:
   m_GameObject: {fileID: 368665110}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -16838,7 +16861,7 @@ GameObject:
   - 50: {fileID: 369178696}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16911,7 +16934,7 @@ GameObject:
   - 50: {fileID: 370003181}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16984,7 +17007,7 @@ GameObject:
   - 50: {fileID: 376347886}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17141,7 +17164,7 @@ GameObject:
   - 33: {fileID: 397701829}
   - 65: {fileID: 397701828}
   - 23: {fileID: 397701827}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -17199,7 +17222,7 @@ BoxCollider:
   m_GameObject: {fileID: 397701825}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -17317,7 +17340,7 @@ GameObject:
   - 33: {fileID: 403934918}
   - 65: {fileID: 403934917}
   - 23: {fileID: 403934916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -17375,7 +17398,7 @@ BoxCollider:
   m_GameObject: {fileID: 403934914}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -17397,7 +17420,7 @@ GameObject:
   - 33: {fileID: 405649561}
   - 65: {fileID: 405649560}
   - 23: {fileID: 405649559}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -17455,7 +17478,7 @@ BoxCollider:
   m_GameObject: {fileID: 405649557}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -17659,7 +17682,7 @@ GameObject:
   - 33: {fileID: 409682737}
   - 65: {fileID: 409682736}
   - 23: {fileID: 409682735}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -17717,7 +17740,7 @@ BoxCollider:
   m_GameObject: {fileID: 409682733}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -17921,7 +17944,7 @@ GameObject:
   - 33: {fileID: 419817287}
   - 65: {fileID: 419817286}
   - 23: {fileID: 419817285}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -17979,7 +18002,7 @@ BoxCollider:
   m_GameObject: {fileID: 419817283}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -17990,6 +18013,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 419817283}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!224 &420842810 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1157616500}
+--- !u!114 &420842811 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011378993910, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1157616500}
+  m_Script: {fileID: 11500000, guid: 4f9f406e08d25804abc599d3cc3da545, type: 3}
 --- !u!1 &422592821
 GameObject:
   m_ObjectHideFlags: 0
@@ -18001,7 +18035,7 @@ GameObject:
   - 33: {fileID: 422592825}
   - 65: {fileID: 422592824}
   - 23: {fileID: 422592823}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -18059,7 +18093,7 @@ BoxCollider:
   m_GameObject: {fileID: 422592821}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -18081,7 +18115,7 @@ GameObject:
   - 33: {fileID: 424101266}
   - 65: {fileID: 424101265}
   - 23: {fileID: 424101264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -18139,7 +18173,7 @@ BoxCollider:
   m_GameObject: {fileID: 424101262}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -18343,7 +18377,7 @@ GameObject:
   - 33: {fileID: 436232315}
   - 65: {fileID: 436232314}
   - 23: {fileID: 436232313}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -18401,7 +18435,7 @@ BoxCollider:
   m_GameObject: {fileID: 436232311}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -18423,7 +18457,7 @@ GameObject:
   - 33: {fileID: 436761404}
   - 65: {fileID: 436761403}
   - 23: {fileID: 436761402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x7 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -18481,7 +18515,7 @@ BoxCollider:
   m_GameObject: {fileID: 436761400}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -18505,7 +18539,7 @@ GameObject:
   - 50: {fileID: 440479352}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19018,7 +19052,7 @@ GameObject:
   - 50: {fileID: 454615628}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19177,7 +19211,7 @@ GameObject:
   - 50: {fileID: 459760708}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19344,7 +19378,7 @@ GameObject:
   - 33: {fileID: 466099328}
   - 65: {fileID: 466099327}
   - 23: {fileID: 466099326}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -19402,7 +19436,7 @@ BoxCollider:
   m_GameObject: {fileID: 466099324}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -19598,7 +19632,7 @@ GameObject:
   - 50: {fileID: 474885767}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19671,7 +19705,7 @@ GameObject:
   - 50: {fileID: 475131177}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20010,7 +20044,7 @@ GameObject:
   - 33: {fileID: 482696845}
   - 65: {fileID: 482696844}
   - 23: {fileID: 482696843}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 11x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -20068,7 +20102,7 @@ BoxCollider:
   m_GameObject: {fileID: 482696841}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -20264,7 +20298,7 @@ GameObject:
   - 50: {fileID: 488666795}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20337,7 +20371,7 @@ GameObject:
   - 50: {fileID: 491070401}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20580,7 +20614,7 @@ GameObject:
   - 33: {fileID: 499409183}
   - 65: {fileID: 499409182}
   - 23: {fileID: 499409181}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -20638,7 +20672,7 @@ BoxCollider:
   m_GameObject: {fileID: 499409179}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -20940,7 +20974,7 @@ GameObject:
   - 50: {fileID: 510464342}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21011,7 +21045,7 @@ GameObject:
   - 33: {fileID: 510834414}
   - 65: {fileID: 510834413}
   - 23: {fileID: 510834412}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21069,7 +21103,7 @@ BoxCollider:
   m_GameObject: {fileID: 510834410}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -21091,7 +21125,7 @@ GameObject:
   - 33: {fileID: 519540435}
   - 65: {fileID: 519540434}
   - 23: {fileID: 519540433}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21149,7 +21183,7 @@ BoxCollider:
   m_GameObject: {fileID: 519540431}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -21173,7 +21207,7 @@ GameObject:
   - 50: {fileID: 524144095}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21244,7 +21278,7 @@ GameObject:
   - 33: {fileID: 524270460}
   - 65: {fileID: 524270459}
   - 23: {fileID: 524270458}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21302,7 +21336,7 @@ BoxCollider:
   m_GameObject: {fileID: 524270456}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -21538,7 +21572,7 @@ GameObject:
   - 33: {fileID: 528396990}
   - 65: {fileID: 528396989}
   - 23: {fileID: 528396988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21596,7 +21630,7 @@ BoxCollider:
   m_GameObject: {fileID: 528396986}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -21886,7 +21920,7 @@ GameObject:
   - 33: {fileID: 534539771}
   - 65: {fileID: 534539770}
   - 23: {fileID: 534539769}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21944,7 +21978,7 @@ BoxCollider:
   m_GameObject: {fileID: 534539767}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -22236,7 +22270,7 @@ GameObject:
   - 50: {fileID: 541228990}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22307,7 +22341,7 @@ GameObject:
   - 33: {fileID: 542699836}
   - 65: {fileID: 542699835}
   - 23: {fileID: 542699834}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -22365,7 +22399,7 @@ BoxCollider:
   m_GameObject: {fileID: 542699832}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -22647,7 +22681,7 @@ GameObject:
   - 50: {fileID: 552392601}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22720,7 +22754,7 @@ GameObject:
   - 50: {fileID: 554962604}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22983,7 +23017,7 @@ GameObject:
   - 33: {fileID: 559966422}
   - 65: {fileID: 559966421}
   - 23: {fileID: 559966420}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -23041,7 +23075,7 @@ BoxCollider:
   m_GameObject: {fileID: 559966418}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -23493,7 +23527,7 @@ GameObject:
   - 33: {fileID: 567078810}
   - 65: {fileID: 567078809}
   - 23: {fileID: 567078808}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 8x4 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -23551,7 +23585,7 @@ BoxCollider:
   m_GameObject: {fileID: 567078806}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -23573,7 +23607,7 @@ GameObject:
   - 33: {fileID: 569178777}
   - 65: {fileID: 569178776}
   - 23: {fileID: 569178775}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -23631,7 +23665,7 @@ BoxCollider:
   m_GameObject: {fileID: 569178773}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -23655,7 +23689,7 @@ GameObject:
   - 50: {fileID: 571515679}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23824,7 +23858,7 @@ GameObject:
   - 50: {fileID: 572753887}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23958,7 +23992,7 @@ GameObject:
   - 50: {fileID: 573573450}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24029,7 +24063,7 @@ GameObject:
   - 33: {fileID: 576652993}
   - 65: {fileID: 576652992}
   - 23: {fileID: 576652991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -24087,7 +24121,7 @@ BoxCollider:
   m_GameObject: {fileID: 576652989}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -24203,6 +24237,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 578480566}
   - 212: {fileID: 578480567}
+  - 61: {fileID: 578480568}
+  - 50: {fileID: 578480569}
   m_Layer: 0
   m_Name: ComodeSpriteSheet_0
   m_TagString: Furniture
@@ -24236,7 +24272,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -24256,6 +24292,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &578480568
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578480565}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.32}
+--- !u!50 &578480569
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578480565}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 4
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &579944041
 GameObject:
   m_ObjectHideFlags: 0
@@ -24537,7 +24604,7 @@ GameObject:
   - 50: {fileID: 590703640}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24780,7 +24847,7 @@ GameObject:
   - 33: {fileID: 592105403}
   - 65: {fileID: 592105402}
   - 23: {fileID: 592105401}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -24838,7 +24905,7 @@ BoxCollider:
   m_GameObject: {fileID: 592105399}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -24862,7 +24929,7 @@ GameObject:
   - 50: {fileID: 593154192}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24935,7 +25002,7 @@ GameObject:
   - 50: {fileID: 595005690}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25094,7 +25161,7 @@ GameObject:
   - 50: {fileID: 598955626}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25167,7 +25234,7 @@ GameObject:
   - 50: {fileID: 599852774}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25238,7 +25305,7 @@ GameObject:
   - 33: {fileID: 599913518}
   - 65: {fileID: 599913517}
   - 23: {fileID: 599913516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 6x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -25296,7 +25363,7 @@ BoxCollider:
   m_GameObject: {fileID: 599913514}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -25737,6 +25804,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 608623472}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &608808962 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012983783294, guid: 70db2e092e4071046896480052b582f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 965202013}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &613581595
 GameObject:
   m_ObjectHideFlags: 0
@@ -25836,7 +25909,7 @@ GameObject:
   - 50: {fileID: 616412910}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26081,7 +26154,7 @@ GameObject:
   - 50: {fileID: 620279845}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26418,6 +26491,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 627395922}
   - 212: {fileID: 627395923}
+  - 61: {fileID: 627395924}
+  - 50: {fileID: 627395925}
   m_Layer: 0
   m_Name: cabinet_1
   m_TagString: Furniture
@@ -26451,7 +26526,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -26471,6 +26546,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &627395924
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627395921}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.32}
+--- !u!50 &627395925
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627395921}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &628160432
 GameObject:
   m_ObjectHideFlags: 0
@@ -26922,7 +27028,7 @@ GameObject:
   - 33: {fileID: 635620961}
   - 65: {fileID: 635620960}
   - 23: {fileID: 635620959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -26980,7 +27086,7 @@ BoxCollider:
   m_GameObject: {fileID: 635620957}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -27176,7 +27282,7 @@ GameObject:
   - 50: {fileID: 639256734}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27249,7 +27355,7 @@ GameObject:
   - 50: {fileID: 640280841}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27492,7 +27598,7 @@ GameObject:
   - 33: {fileID: 645820783}
   - 65: {fileID: 645820782}
   - 23: {fileID: 645820781}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -27550,7 +27656,7 @@ BoxCollider:
   m_GameObject: {fileID: 645820779}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -27660,7 +27766,7 @@ GameObject:
   - 50: {fileID: 652218967}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28073,6 +28179,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 664328082}
   - 212: {fileID: 664328083}
+  - 61: {fileID: 664328084}
+  - 50: {fileID: 664328085}
   m_Layer: 0
   m_Name: Table
   m_TagString: Furniture
@@ -28106,7 +28214,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -28126,69 +28234,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &666098859
-GameObject:
+--- !u!61 &664328084
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 666098861}
-  - 108: {fileID: 666098860}
-  m_Layer: 0
-  m_Name: Point light (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &666098860
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 666098859}
+  m_GameObject: {fileID: 664328081}
   m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &666098861
-Transform:
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.96, y: 0.64}
+--- !u!50 &664328085
+Rigidbody2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 666098859}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.37, y: -1.1, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_GameObject: {fileID: 664328081}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 5
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &667991365
 GameObject:
   m_ObjectHideFlags: 0
@@ -28200,7 +28276,7 @@ GameObject:
   - 33: {fileID: 667991369}
   - 65: {fileID: 667991368}
   - 23: {fileID: 667991367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -28258,7 +28334,7 @@ BoxCollider:
   m_GameObject: {fileID: 667991365}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -28282,7 +28358,7 @@ GameObject:
   - 50: {fileID: 674120030}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28666,7 +28742,7 @@ GameObject:
   - 33: {fileID: 690101480}
   - 65: {fileID: 690101479}
   - 23: {fileID: 690101478}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -28724,7 +28800,7 @@ BoxCollider:
   m_GameObject: {fileID: 690101476}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -28748,7 +28824,7 @@ GameObject:
   - 50: {fileID: 692339798}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29001,7 +29077,7 @@ GameObject:
   - 33: {fileID: 697310434}
   - 65: {fileID: 697310433}
   - 23: {fileID: 697310432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -29059,7 +29135,7 @@ BoxCollider:
   m_GameObject: {fileID: 697310430}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -29263,7 +29339,7 @@ GameObject:
   - 33: {fileID: 702568280}
   - 65: {fileID: 702568279}
   - 23: {fileID: 702568278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -29321,7 +29397,7 @@ BoxCollider:
   m_GameObject: {fileID: 702568276}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -29343,7 +29419,7 @@ GameObject:
   - 33: {fileID: 703841725}
   - 65: {fileID: 703841724}
   - 23: {fileID: 703841723}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -29401,7 +29477,7 @@ BoxCollider:
   m_GameObject: {fileID: 703841721}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -29605,7 +29681,7 @@ GameObject:
   - 33: {fileID: 710709152}
   - 65: {fileID: 710709151}
   - 23: {fileID: 710709150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -29663,7 +29739,7 @@ BoxCollider:
   m_GameObject: {fileID: 710709148}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -29685,7 +29761,7 @@ GameObject:
   - 33: {fileID: 715005161}
   - 65: {fileID: 715005160}
   - 23: {fileID: 715005159}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (14)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -29743,7 +29819,7 @@ BoxCollider:
   m_GameObject: {fileID: 715005157}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -29754,6 +29830,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 715005157}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &715602206 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012318955530, guid: 70db2e092e4071046896480052b582f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 965202013}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &717242164
 GameObject:
   m_ObjectHideFlags: 0
@@ -29926,6 +30008,63 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 723293953}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &723817141
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.789635
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.21332729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013252253934, guid: 56afc04fce477c346bc638163389e7d3,
+        type: 2}
+      propertyPath: m_CachedInstanceID
+      value: -64536
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000012428800428, guid: 56afc04fce477c346bc638163389e7d3,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000010974150982, guid: 56afc04fce477c346bc638163389e7d3,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &724285227
 GameObject:
   m_ObjectHideFlags: 0
@@ -30283,7 +30422,7 @@ GameObject:
   - 50: {fileID: 732515675}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30356,7 +30495,7 @@ GameObject:
   - 50: {fileID: 741764566}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30515,7 +30654,7 @@ GameObject:
   - 50: {fileID: 746324833}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30682,7 +30821,7 @@ GameObject:
   - 33: {fileID: 749256731}
   - 65: {fileID: 749256730}
   - 23: {fileID: 749256729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -30740,7 +30879,7 @@ BoxCollider:
   m_GameObject: {fileID: 749256727}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -30956,7 +31095,7 @@ GameObject:
   - 50: {fileID: 755452645}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31029,7 +31168,7 @@ GameObject:
   - 50: {fileID: 758364754}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31100,7 +31239,7 @@ GameObject:
   - 33: {fileID: 759243787}
   - 65: {fileID: 759243786}
   - 23: {fileID: 759243785}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -31158,7 +31297,7 @@ BoxCollider:
   m_GameObject: {fileID: 759243783}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -31534,7 +31673,7 @@ GameObject:
   - 33: {fileID: 771606462}
   - 65: {fileID: 771606461}
   - 23: {fileID: 771606460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -31592,7 +31731,7 @@ BoxCollider:
   m_GameObject: {fileID: 771606458}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -31769,7 +31908,7 @@ GameObject:
   - 33: {fileID: 775657608}
   - 65: {fileID: 775657607}
   - 23: {fileID: 775657606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -31827,7 +31966,7 @@ BoxCollider:
   m_GameObject: {fileID: 775657604}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -31849,7 +31988,7 @@ GameObject:
   - 33: {fileID: 777583004}
   - 65: {fileID: 777583003}
   - 23: {fileID: 777583002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -31907,7 +32046,7 @@ BoxCollider:
   m_GameObject: {fileID: 777583000}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -31931,7 +32070,7 @@ GameObject:
   - 50: {fileID: 781633072}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32087,6 +32226,58 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &786950513
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1606634049}
+    m_Modifications:
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011123459872, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108000011876185472, guid: 0e12ea16f8c1c0f4e980aa3d84993652,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 108000011876185472, guid: 0e12ea16f8c1c0f4e980aa3d84993652,
+        type: 2}
+      propertyPath: m_Range
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0e12ea16f8c1c0f4e980aa3d84993652, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &787949046
 GameObject:
   m_ObjectHideFlags: 0
@@ -33104,7 +33295,7 @@ GameObject:
   - 33: {fileID: 822326834}
   - 65: {fileID: 822326833}
   - 23: {fileID: 822326832}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -33162,7 +33353,7 @@ BoxCollider:
   m_GameObject: {fileID: 822326830}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -33268,6 +33459,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 829551555}
   - 212: {fileID: 829551556}
+  - 61: {fileID: 829551557}
+  - 50: {fileID: 829551558}
   m_Layer: 0
   m_Name: ChaiseSpriteSheet_2
   m_TagString: Furniture
@@ -33301,7 +33494,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -33321,6 +33514,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &829551557
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829551554}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+--- !u!50 &829551558
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 829551554}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &830464523
 GameObject:
   m_ObjectHideFlags: 0
@@ -34128,7 +34352,7 @@ GameObject:
   - 50: {fileID: 848839806}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34201,7 +34425,7 @@ GameObject:
   - 50: {fileID: 850887902}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34274,7 +34498,7 @@ GameObject:
   - 50: {fileID: 856917690}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34763,7 +34987,7 @@ GameObject:
   - 50: {fileID: 881407390}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35104,7 +35328,7 @@ GameObject:
   - 50: {fileID: 887189280}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35551,7 +35775,7 @@ GameObject:
   - 50: {fileID: 898351502}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35622,7 +35846,7 @@ GameObject:
   - 33: {fileID: 901528288}
   - 65: {fileID: 901528287}
   - 23: {fileID: 901528286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -35680,7 +35904,7 @@ BoxCollider:
   m_GameObject: {fileID: 901528284}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -35788,7 +36012,7 @@ GameObject:
   - 33: {fileID: 906889505}
   - 65: {fileID: 906889504}
   - 23: {fileID: 906889503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -35846,7 +36070,7 @@ BoxCollider:
   m_GameObject: {fileID: 906889501}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -36747,69 +36971,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 922840307}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &924565076
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 924565078}
-  - 108: {fileID: 924565077}
-  m_Layer: 0
-  m_Name: Point light (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &924565077
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 924565076}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &924565078
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 924565076}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.83, y: 3.06, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
 --- !u!1 &925174172
 GameObject:
   m_ObjectHideFlags: 0
@@ -36907,7 +37068,7 @@ GameObject:
   - 33: {fileID: 925888205}
   - 65: {fileID: 925888204}
   - 23: {fileID: 925888203}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -36965,7 +37126,7 @@ BoxCollider:
   m_GameObject: {fileID: 925888201}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -37255,7 +37416,7 @@ GameObject:
   - 33: {fileID: 929373639}
   - 65: {fileID: 929373638}
   - 23: {fileID: 929373637}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -37313,7 +37474,7 @@ BoxCollider:
   m_GameObject: {fileID: 929373635}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -37509,7 +37670,7 @@ GameObject:
   - 50: {fileID: 931891616}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37668,7 +37829,7 @@ GameObject:
   - 50: {fileID: 932958702}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37739,7 +37900,7 @@ GameObject:
   - 33: {fileID: 933531880}
   - 65: {fileID: 933531879}
   - 23: {fileID: 933531878}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -37797,7 +37958,7 @@ BoxCollider:
   m_GameObject: {fileID: 933531876}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -37819,7 +37980,7 @@ GameObject:
   - 33: {fileID: 934590606}
   - 65: {fileID: 934590605}
   - 23: {fileID: 934590604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (11)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -37877,7 +38038,7 @@ BoxCollider:
   m_GameObject: {fileID: 934590602}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -37985,7 +38146,7 @@ GameObject:
   - 33: {fileID: 937327518}
   - 65: {fileID: 937327517}
   - 23: {fileID: 937327516}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -38043,7 +38204,7 @@ BoxCollider:
   m_GameObject: {fileID: 937327514}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -38065,7 +38226,7 @@ GameObject:
   - 33: {fileID: 937495848}
   - 65: {fileID: 937495847}
   - 23: {fileID: 937495846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -38123,7 +38284,7 @@ BoxCollider:
   m_GameObject: {fileID: 937495844}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -38147,7 +38308,7 @@ GameObject:
   - 50: {fileID: 937739657}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38218,7 +38379,7 @@ GameObject:
   - 33: {fileID: 937798320}
   - 65: {fileID: 937798319}
   - 23: {fileID: 937798318}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -38276,7 +38437,7 @@ BoxCollider:
   m_GameObject: {fileID: 937798316}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -38394,7 +38555,7 @@ GameObject:
   - 33: {fileID: 939406236}
   - 65: {fileID: 939406235}
   - 23: {fileID: 939406234}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 13x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -38452,7 +38613,7 @@ BoxCollider:
   m_GameObject: {fileID: 939406232}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -38572,7 +38733,7 @@ GameObject:
   - 50: {fileID: 949331287}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38645,7 +38806,7 @@ GameObject:
   - 50: {fileID: 949552803}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38802,7 +38963,7 @@ GameObject:
   - 33: {fileID: 953171905}
   - 65: {fileID: 953171904}
   - 23: {fileID: 953171903}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -38860,7 +39021,7 @@ BoxCollider:
   m_GameObject: {fileID: 953171901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -38884,7 +39045,7 @@ GameObject:
   - 50: {fileID: 960259646}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38955,7 +39116,7 @@ GameObject:
   - 33: {fileID: 964037402}
   - 65: {fileID: 964037401}
   - 23: {fileID: 964037400}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -39013,7 +39174,7 @@ BoxCollider:
   m_GameObject: {fileID: 964037398}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -39120,6 +39281,106 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &965202013
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012696061096, guid: 70db2e092e4071046896480052b582f3,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 70db2e092e4071046896480052b582f3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &965252555
 GameObject:
   m_ObjectHideFlags: 0
@@ -39133,7 +39394,7 @@ GameObject:
   - 50: {fileID: 965252557}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39302,7 +39563,7 @@ GameObject:
   - 50: {fileID: 974985245}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39633,7 +39894,7 @@ GameObject:
   - 50: {fileID: 989899528}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39792,7 +40053,7 @@ GameObject:
   - 50: {fileID: 993283243}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39865,7 +40126,7 @@ GameObject:
   - 50: {fileID: 993715675}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40024,7 +40285,7 @@ GameObject:
   - 50: {fileID: 999339849}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40126,7 +40387,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -40339,7 +40600,7 @@ GameObject:
   - 33: {fileID: 1002176520}
   - 65: {fileID: 1002176519}
   - 23: {fileID: 1002176518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -40397,7 +40658,7 @@ BoxCollider:
   m_GameObject: {fileID: 1002176516}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -40603,7 +40864,7 @@ GameObject:
   - 50: {fileID: 1011075469}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40676,7 +40937,7 @@ GameObject:
   - 50: {fileID: 1011571187}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40941,7 +41202,7 @@ GameObject:
   - 50: {fileID: 1015535789}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41270,7 +41531,7 @@ GameObject:
   - 33: {fileID: 1038521344}
   - 65: {fileID: 1038521343}
   - 23: {fileID: 1038521342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -41328,7 +41589,7 @@ BoxCollider:
   m_GameObject: {fileID: 1038521340}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -41532,7 +41793,7 @@ GameObject:
   - 33: {fileID: 1045829956}
   - 65: {fileID: 1045829955}
   - 23: {fileID: 1045829954}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -41590,7 +41851,7 @@ BoxCollider:
   m_GameObject: {fileID: 1045829952}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -41755,7 +42016,7 @@ GameObject:
   - 33: {fileID: 1050612097}
   - 65: {fileID: 1050612096}
   - 23: {fileID: 1050612095}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -41813,7 +42074,7 @@ BoxCollider:
   m_GameObject: {fileID: 1050612093}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -41921,7 +42182,7 @@ GameObject:
   - 33: {fileID: 1051722740}
   - 65: {fileID: 1051722739}
   - 23: {fileID: 1051722738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -41979,7 +42240,7 @@ BoxCollider:
   m_GameObject: {fileID: 1051722736}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -42003,7 +42264,7 @@ GameObject:
   - 50: {fileID: 1052509543}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42074,7 +42335,7 @@ GameObject:
   - 33: {fileID: 1052760337}
   - 65: {fileID: 1052760336}
   - 23: {fileID: 1052760335}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x3
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -42132,7 +42393,7 @@ BoxCollider:
   m_GameObject: {fileID: 1052760333}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -42152,6 +42413,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1055997817}
   - 212: {fileID: 1055997818}
+  - 61: {fileID: 1055997819}
+  - 50: {fileID: 1055997820}
   m_Layer: 0
   m_Name: ChaiseSpriteSheet_0 (2)
   m_TagString: Furniture
@@ -42185,7 +42448,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -42205,6 +42468,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1055997819
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055997816}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+--- !u!50 &1055997820
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055997816}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1057811250
 GameObject:
   m_ObjectHideFlags: 0
@@ -42312,7 +42606,7 @@ GameObject:
   - 33: {fileID: 1058227790}
   - 65: {fileID: 1058227789}
   - 23: {fileID: 1058227788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x3
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -42370,7 +42664,7 @@ BoxCollider:
   m_GameObject: {fileID: 1058227786}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -42392,7 +42686,7 @@ GameObject:
   - 33: {fileID: 1058556848}
   - 65: {fileID: 1058556847}
   - 23: {fileID: 1058556846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -42450,7 +42744,7 @@ BoxCollider:
   m_GameObject: {fileID: 1058556844}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -42654,7 +42948,7 @@ GameObject:
   - 33: {fileID: 1063094462}
   - 65: {fileID: 1063094461}
   - 23: {fileID: 1063094460}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (7)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -42712,7 +43006,7 @@ BoxCollider:
   m_GameObject: {fileID: 1063094458}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -42905,69 +43199,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1066706354}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1069166530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1069166532}
-  - 108: {fileID: 1069166531}
-  m_Layer: 0
-  m_Name: Point light (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1069166531
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1069166530}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &1069166532
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1069166530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.57, y: -1.1, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
 --- !u!1 &1072106394
 GameObject:
   m_ObjectHideFlags: 0
@@ -43495,7 +43726,7 @@ GameObject:
   - 33: {fileID: 1086574920}
   - 65: {fileID: 1086574919}
   - 23: {fileID: 1086574918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -43553,7 +43784,7 @@ BoxCollider:
   m_GameObject: {fileID: 1086574916}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -43577,7 +43808,7 @@ GameObject:
   - 50: {fileID: 1086910298}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44110,7 +44341,7 @@ GameObject:
   - 50: {fileID: 1095069793}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44181,7 +44412,7 @@ GameObject:
   - 33: {fileID: 1097711702}
   - 65: {fileID: 1097711701}
   - 23: {fileID: 1097711700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -44239,7 +44470,7 @@ BoxCollider:
   m_GameObject: {fileID: 1097711698}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -44347,7 +44578,7 @@ GameObject:
   - 33: {fileID: 1109679348}
   - 65: {fileID: 1109679347}
   - 23: {fileID: 1109679346}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (15)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -44405,7 +44636,7 @@ BoxCollider:
   m_GameObject: {fileID: 1109679344}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -44513,7 +44744,7 @@ GameObject:
   - 33: {fileID: 1114857816}
   - 65: {fileID: 1114857815}
   - 23: {fileID: 1114857814}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -44571,7 +44802,7 @@ BoxCollider:
   m_GameObject: {fileID: 1114857812}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -44691,7 +44922,7 @@ GameObject:
   - 50: {fileID: 1118980568}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44848,7 +45079,7 @@ GameObject:
   - 33: {fileID: 1122629083}
   - 65: {fileID: 1122629082}
   - 23: {fileID: 1122629081}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -44906,7 +45137,7 @@ BoxCollider:
   m_GameObject: {fileID: 1122629079}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -45198,7 +45429,7 @@ GameObject:
   - 50: {fileID: 1133203725}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45453,7 +45684,7 @@ GameObject:
   - 50: {fileID: 1144908752}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45695,6 +45926,106 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &1157616500
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1401666924}
+    m_Modifications:
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011655485922, guid: 3d20f3fed53c7ee409e7d3c79947359e,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3d20f3fed53c7ee409e7d3c79947359e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1160441392
 GameObject:
   m_ObjectHideFlags: 0
@@ -45706,7 +46037,7 @@ GameObject:
   - 33: {fileID: 1160441396}
   - 65: {fileID: 1160441395}
   - 23: {fileID: 1160441394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -45764,7 +46095,7 @@ BoxCollider:
   m_GameObject: {fileID: 1160441392}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -45968,7 +46299,7 @@ GameObject:
   - 33: {fileID: 1161725912}
   - 65: {fileID: 1161725911}
   - 23: {fileID: 1161725910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -46026,7 +46357,7 @@ BoxCollider:
   m_GameObject: {fileID: 1161725908}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -46374,7 +46705,7 @@ GameObject:
   - 50: {fileID: 1174131350}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46703,7 +47034,7 @@ GameObject:
   - 33: {fileID: 1192664316}
   - 65: {fileID: 1192664315}
   - 23: {fileID: 1192664314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 9x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -46761,7 +47092,7 @@ BoxCollider:
   m_GameObject: {fileID: 1192664312}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -46785,7 +47116,7 @@ GameObject:
   - 50: {fileID: 1192717009}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46942,7 +47273,7 @@ GameObject:
   - 33: {fileID: 1193548101}
   - 65: {fileID: 1193548100}
   - 23: {fileID: 1193548099}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -47000,7 +47331,7 @@ BoxCollider:
   m_GameObject: {fileID: 1193548097}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -47024,7 +47355,7 @@ GameObject:
   - 50: {fileID: 1193901448}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47911,7 +48242,7 @@ GameObject:
   - 50: {fileID: 1208679767}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48156,7 +48487,7 @@ GameObject:
   - 50: {fileID: 1211013140}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48313,7 +48644,7 @@ GameObject:
   - 33: {fileID: 1216960802}
   - 65: {fileID: 1216960801}
   - 23: {fileID: 1216960800}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0 (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -48371,7 +48702,7 @@ BoxCollider:
   m_GameObject: {fileID: 1216960798}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -48661,7 +48992,7 @@ GameObject:
   - 33: {fileID: 1225440514}
   - 65: {fileID: 1225440513}
   - 23: {fileID: 1225440512}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -48719,7 +49050,7 @@ BoxCollider:
   m_GameObject: {fileID: 1225440510}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -48827,7 +49158,7 @@ GameObject:
   - 33: {fileID: 1229381996}
   - 65: {fileID: 1229381995}
   - 23: {fileID: 1229381994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 8x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -48885,7 +49216,7 @@ BoxCollider:
   m_GameObject: {fileID: 1229381992}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -48907,7 +49238,7 @@ GameObject:
   - 33: {fileID: 1229781991}
   - 65: {fileID: 1229781990}
   - 23: {fileID: 1229781989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -48965,7 +49296,7 @@ BoxCollider:
   m_GameObject: {fileID: 1229781987}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -48989,7 +49320,7 @@ GameObject:
   - 50: {fileID: 1230384475}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49156,7 +49487,7 @@ GameObject:
   - 33: {fileID: 1236826240}
   - 65: {fileID: 1236826239}
   - 23: {fileID: 1236826238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (10)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -49214,7 +49545,7 @@ BoxCollider:
   m_GameObject: {fileID: 1236826236}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -49492,6 +49823,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1244848604}
   - 212: {fileID: 1244848605}
+  - 61: {fileID: 1244848606}
+  - 50: {fileID: 1244848607}
   m_Layer: 0
   m_Name: cabinet_0
   m_TagString: Furniture
@@ -49525,7 +49858,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -49545,6 +49878,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1244848606
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244848603}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.32}
+--- !u!50 &1244848607
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244848603}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1246449495
 GameObject:
   m_ObjectHideFlags: 0
@@ -49558,7 +49922,7 @@ GameObject:
   - 50: {fileID: 1246449497}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49889,7 +50253,7 @@ GameObject:
   - 50: {fileID: 1253906076}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50056,7 +50420,7 @@ GameObject:
   - 33: {fileID: 1256679488}
   - 65: {fileID: 1256679487}
   - 23: {fileID: 1256679486}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 12x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -50114,7 +50478,7 @@ BoxCollider:
   m_GameObject: {fileID: 1256679484}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -50558,7 +50922,7 @@ GameObject:
   - 50: {fileID: 1266937645}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50629,7 +50993,7 @@ GameObject:
   - 33: {fileID: 1267096136}
   - 65: {fileID: 1267096135}
   - 23: {fileID: 1267096134}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -50687,7 +51051,7 @@ BoxCollider:
   m_GameObject: {fileID: 1267096132}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -50883,7 +51247,7 @@ GameObject:
   - 50: {fileID: 1271029536}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51136,7 +51500,7 @@ GameObject:
   - 33: {fileID: 1276076601}
   - 65: {fileID: 1276076600}
   - 23: {fileID: 1276076599}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -51194,7 +51558,7 @@ BoxCollider:
   m_GameObject: {fileID: 1276076597}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -51216,7 +51580,7 @@ GameObject:
   - 33: {fileID: 1279925494}
   - 65: {fileID: 1279925493}
   - 23: {fileID: 1279925492}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 13x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -51274,7 +51638,7 @@ BoxCollider:
   m_GameObject: {fileID: 1279925490}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -52090,7 +52454,7 @@ GameObject:
   - 33: {fileID: 1301265316}
   - 65: {fileID: 1301265315}
   - 23: {fileID: 1301265314}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 8x4 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -52148,7 +52512,7 @@ BoxCollider:
   m_GameObject: {fileID: 1301265312}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -52352,7 +52716,7 @@ GameObject:
   - 33: {fileID: 1303870572}
   - 65: {fileID: 1303870571}
   - 23: {fileID: 1303870570}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -52410,7 +52774,7 @@ BoxCollider:
   m_GameObject: {fileID: 1303870568}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -52530,7 +52894,7 @@ GameObject:
   - 50: {fileID: 1306532761}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52955,7 +53319,7 @@ GameObject:
   - 33: {fileID: 1319415047}
   - 65: {fileID: 1319415046}
   - 23: {fileID: 1319415045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -53013,7 +53377,7 @@ BoxCollider:
   m_GameObject: {fileID: 1319415043}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -53411,7 +53775,7 @@ GameObject:
   - 50: {fileID: 1325590991}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53750,7 +54114,7 @@ GameObject:
   - 33: {fileID: 1335069155}
   - 65: {fileID: 1335069154}
   - 23: {fileID: 1335069153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x4 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -53808,7 +54172,7 @@ BoxCollider:
   m_GameObject: {fileID: 1335069151}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -54088,7 +54452,7 @@ GameObject:
   - 33: {fileID: 1354427029}
   - 65: {fileID: 1354427028}
   - 23: {fileID: 1354427027}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -54146,7 +54510,7 @@ BoxCollider:
   m_GameObject: {fileID: 1354427025}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -54254,7 +54618,7 @@ GameObject:
   - 33: {fileID: 1358246520}
   - 65: {fileID: 1358246519}
   - 23: {fileID: 1358246518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -54312,7 +54676,7 @@ BoxCollider:
   m_GameObject: {fileID: 1358246516}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -54334,7 +54698,7 @@ GameObject:
   - 33: {fileID: 1364358735}
   - 65: {fileID: 1364358734}
   - 23: {fileID: 1364358733}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -54392,7 +54756,7 @@ BoxCollider:
   m_GameObject: {fileID: 1364358731}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -54500,7 +54864,7 @@ GameObject:
   - 33: {fileID: 1370645082}
   - 65: {fileID: 1370645081}
   - 23: {fileID: 1370645080}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 8x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -54558,7 +54922,7 @@ BoxCollider:
   m_GameObject: {fileID: 1370645078}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -55105,6 +55469,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1391452887}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!50 &1394646414 stripped
+Rigidbody2D:
+  m_PrefabParentObject: {fileID: 50000012428800428, guid: 56afc04fce477c346bc638163389e7d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 723817141}
+--- !u!4 &1394646421 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3,
+    type: 2}
+  m_PrefabInternal: {fileID: 723817141}
 --- !u!1 &1398406997
 GameObject:
   m_ObjectHideFlags: 0
@@ -55202,7 +55576,7 @@ GameObject:
   - 33: {fileID: 1400820962}
   - 65: {fileID: 1400820961}
   - 23: {fileID: 1400820960}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 8x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -55260,7 +55634,7 @@ BoxCollider:
   m_GameObject: {fileID: 1400820958}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -55271,6 +55645,99 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400820958}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1401666920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1401666924}
+  - 223: {fileID: 1401666923}
+  - 114: {fileID: 1401666922}
+  - 114: {fileID: 1401666921}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1401666921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401666920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1401666922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401666920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1401666923
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401666920}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1401666924
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401666920}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 420842810}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1402185105
 GameObject:
   m_ObjectHideFlags: 0
@@ -55454,7 +55921,7 @@ GameObject:
   - 33: {fileID: 1404912761}
   - 65: {fileID: 1404912760}
   - 23: {fileID: 1404912759}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -55512,7 +55979,7 @@ BoxCollider:
   m_GameObject: {fileID: 1404912757}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -55536,7 +56003,7 @@ GameObject:
   - 50: {fileID: 1408907790}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55779,7 +56246,7 @@ GameObject:
   - 33: {fileID: 1419739256}
   - 65: {fileID: 1419739255}
   - 23: {fileID: 1419739254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -55837,7 +56304,7 @@ BoxCollider:
   m_GameObject: {fileID: 1419739252}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -55954,7 +56421,7 @@ GameObject:
   - 33: {fileID: 1426523714}
   - 65: {fileID: 1426523713}
   - 23: {fileID: 1426523712}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -56012,7 +56479,7 @@ BoxCollider:
   m_GameObject: {fileID: 1426523710}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -56132,7 +56599,7 @@ GameObject:
   - 50: {fileID: 1430448182}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56203,7 +56670,7 @@ GameObject:
   - 33: {fileID: 1431371969}
   - 65: {fileID: 1431371968}
   - 23: {fileID: 1431371967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -56261,7 +56728,7 @@ BoxCollider:
   m_GameObject: {fileID: 1431371965}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -56283,7 +56750,7 @@ GameObject:
   - 33: {fileID: 1433490098}
   - 65: {fileID: 1433490097}
   - 23: {fileID: 1433490096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -56341,7 +56808,7 @@ BoxCollider:
   m_GameObject: {fileID: 1433490094}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -56633,7 +57100,7 @@ GameObject:
   - 50: {fileID: 1443505066}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56706,7 +57173,7 @@ GameObject:
   - 50: {fileID: 1449005891}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57207,7 +57674,7 @@ GameObject:
   - 33: {fileID: 1455053405}
   - 65: {fileID: 1455053404}
   - 23: {fileID: 1455053403}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -57265,7 +57732,7 @@ BoxCollider:
   m_GameObject: {fileID: 1455053401}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -57289,7 +57756,7 @@ GameObject:
   - 50: {fileID: 1456885792}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57542,7 +58009,7 @@ GameObject:
   - 33: {fileID: 1461776388}
   - 65: {fileID: 1461776387}
   - 23: {fileID: 1461776386}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -57600,7 +58067,7 @@ BoxCollider:
   m_GameObject: {fileID: 1461776384}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -57710,7 +58177,7 @@ GameObject:
   - 50: {fileID: 1467845426}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58393,7 +58860,7 @@ GameObject:
   - 33: {fileID: 1481491180}
   - 65: {fileID: 1481491179}
   - 23: {fileID: 1481491178}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x3
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -58451,7 +58918,7 @@ BoxCollider:
   m_GameObject: {fileID: 1481491176}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -58475,7 +58942,7 @@ GameObject:
   - 50: {fileID: 1481547923}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58546,7 +59013,7 @@ GameObject:
   - 33: {fileID: 1487509503}
   - 65: {fileID: 1487509502}
   - 23: {fileID: 1487509501}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -58604,7 +59071,7 @@ BoxCollider:
   m_GameObject: {fileID: 1487509499}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -59315,7 +59782,7 @@ GameObject:
   - 33: {fileID: 1513075037}
   - 65: {fileID: 1513075036}
   - 23: {fileID: 1513075035}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -59373,7 +59840,7 @@ BoxCollider:
   m_GameObject: {fileID: 1513075033}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -59397,7 +59864,7 @@ GameObject:
   - 50: {fileID: 1513344307}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59908,7 +60375,7 @@ GameObject:
   - 33: {fileID: 1528941964}
   - 65: {fileID: 1528941963}
   - 23: {fileID: 1528941962}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -59966,7 +60433,7 @@ BoxCollider:
   m_GameObject: {fileID: 1528941960}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -59990,7 +60457,7 @@ GameObject:
   - 50: {fileID: 1530320898}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60159,7 +60626,7 @@ GameObject:
   - 50: {fileID: 1532667169}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60232,7 +60699,7 @@ GameObject:
   - 50: {fileID: 1541077291}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60305,7 +60772,7 @@ GameObject:
   - 50: {fileID: 1542214702}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60376,7 +60843,7 @@ GameObject:
   - 33: {fileID: 1542271736}
   - 65: {fileID: 1542271735}
   - 23: {fileID: 1542271734}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -60434,7 +60901,7 @@ BoxCollider:
   m_GameObject: {fileID: 1542271732}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -61432,7 +61899,7 @@ GameObject:
   - 33: {fileID: 1567307341}
   - 65: {fileID: 1567307340}
   - 23: {fileID: 1567307339}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -61490,7 +61957,7 @@ BoxCollider:
   m_GameObject: {fileID: 1567307337}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -61512,7 +61979,7 @@ GameObject:
   - 33: {fileID: 1567990638}
   - 65: {fileID: 1567990637}
   - 23: {fileID: 1567990636}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -61570,7 +62037,7 @@ BoxCollider:
   m_GameObject: {fileID: 1567990634}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -61678,7 +62145,7 @@ GameObject:
   - 33: {fileID: 1570983019}
   - 65: {fileID: 1570983018}
   - 23: {fileID: 1570983017}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -61736,7 +62203,7 @@ BoxCollider:
   m_GameObject: {fileID: 1570983015}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -62038,7 +62505,7 @@ GameObject:
   - 50: {fileID: 1580936894}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62473,7 +62940,7 @@ GameObject:
   - 33: {fileID: 1601303030}
   - 65: {fileID: 1601303029}
   - 23: {fileID: 1601303028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -62531,7 +62998,7 @@ BoxCollider:
   m_GameObject: {fileID: 1601303026}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -62641,7 +63108,7 @@ GameObject:
   - 50: {fileID: 1604748349}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62813,7 +63280,7 @@ GameObject:
   - 33: {fileID: 1614656954}
   - 65: {fileID: 1614656953}
   - 23: {fileID: 1614656952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 8x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -62871,7 +63338,7 @@ BoxCollider:
   m_GameObject: {fileID: 1614656950}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -62893,7 +63360,7 @@ GameObject:
   - 33: {fileID: 1616013258}
   - 65: {fileID: 1616013257}
   - 23: {fileID: 1616013256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -62951,7 +63418,7 @@ BoxCollider:
   m_GameObject: {fileID: 1616013254}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -62975,7 +63442,7 @@ GameObject:
   - 50: {fileID: 1616808517}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63238,7 +63705,7 @@ GameObject:
   - 33: {fileID: 1620300493}
   - 65: {fileID: 1620300492}
   - 23: {fileID: 1620300491}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -63296,7 +63763,7 @@ BoxCollider:
   m_GameObject: {fileID: 1620300489}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -63406,7 +63873,7 @@ GameObject:
   - 50: {fileID: 1622400232}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63479,7 +63946,7 @@ GameObject:
   - 50: {fileID: 1625616948}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63552,7 +64019,7 @@ GameObject:
   - 50: {fileID: 1627986584}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63711,7 +64178,7 @@ GameObject:
   - 50: {fileID: 1634747835}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63782,7 +64249,7 @@ GameObject:
   - 33: {fileID: 1635853512}
   - 65: {fileID: 1635853511}
   - 23: {fileID: 1635853510}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -63840,7 +64307,7 @@ BoxCollider:
   m_GameObject: {fileID: 1635853508}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -63862,7 +64329,7 @@ GameObject:
   - 33: {fileID: 1636095071}
   - 65: {fileID: 1636095070}
   - 23: {fileID: 1636095069}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -63920,7 +64387,7 @@ BoxCollider:
   m_GameObject: {fileID: 1636095067}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -64088,7 +64555,7 @@ GameObject:
   - 33: {fileID: 1637556644}
   - 65: {fileID: 1637556643}
   - 23: {fileID: 1637556642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -64146,7 +64613,7 @@ BoxCollider:
   m_GameObject: {fileID: 1637556640}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -64266,7 +64733,7 @@ GameObject:
   - 50: {fileID: 1642999421}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64339,7 +64806,7 @@ GameObject:
   - 50: {fileID: 1643869971}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64581,69 +65048,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1648672829}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1650003671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1650003673}
-  - 108: {fileID: 1650003672}
-  m_Layer: 0
-  m_Name: Point light (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1650003672
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1650003671}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &1650003673
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1650003671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.83, y: 0.82, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
 --- !u!1 &1654818832
 GameObject:
   m_ObjectHideFlags: 0
@@ -64730,69 +65134,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654818832}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1654976867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1654976869}
-  - 108: {fileID: 1654976868}
-  m_Layer: 0
-  m_Name: Point light (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1654976868
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1654976867}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &1654976869
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1654976867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.57, y: 1.78, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
 --- !u!1 &1656562401
 GameObject:
   m_ObjectHideFlags: 0
@@ -64890,7 +65231,7 @@ GameObject:
   - 33: {fileID: 1657442682}
   - 65: {fileID: 1657442681}
   - 23: {fileID: 1657442680}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 6x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -64948,7 +65289,7 @@ BoxCollider:
   m_GameObject: {fileID: 1657442678}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -64972,7 +65313,7 @@ GameObject:
   - 50: {fileID: 1657973199}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65043,7 +65384,7 @@ GameObject:
   - 33: {fileID: 1661097827}
   - 65: {fileID: 1661097826}
   - 23: {fileID: 1661097825}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x7 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -65101,7 +65442,7 @@ BoxCollider:
   m_GameObject: {fileID: 1661097823}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -65403,7 +65744,7 @@ GameObject:
   - 50: {fileID: 1671178156}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65648,7 +65989,7 @@ GameObject:
   - 50: {fileID: 1676544769}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65987,7 +66328,7 @@ GameObject:
   - 33: {fileID: 1680388207}
   - 65: {fileID: 1680388206}
   - 23: {fileID: 1680388205}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (7)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -66045,7 +66386,7 @@ BoxCollider:
   m_GameObject: {fileID: 1680388203}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -66153,7 +66494,7 @@ GameObject:
   - 33: {fileID: 1685341260}
   - 65: {fileID: 1685341259}
   - 23: {fileID: 1685341258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -66211,7 +66552,7 @@ BoxCollider:
   m_GameObject: {fileID: 1685341256}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -66321,7 +66662,7 @@ GameObject:
   - 50: {fileID: 1689623994}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66392,7 +66733,7 @@ GameObject:
   - 33: {fileID: 1691508905}
   - 65: {fileID: 1691508904}
   - 23: {fileID: 1691508903}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -66450,7 +66791,7 @@ BoxCollider:
   m_GameObject: {fileID: 1691508901}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -66644,7 +66985,7 @@ GameObject:
   - 33: {fileID: 1695774965}
   - 65: {fileID: 1695774964}
   - 23: {fileID: 1695774963}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 8x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -66702,7 +67043,7 @@ BoxCollider:
   m_GameObject: {fileID: 1695774961}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -66726,7 +67067,7 @@ GameObject:
   - 50: {fileID: 1697355705}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66797,7 +67138,7 @@ GameObject:
   - 33: {fileID: 1697447145}
   - 65: {fileID: 1697447144}
   - 23: {fileID: 1697447143}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -66855,7 +67196,7 @@ BoxCollider:
   m_GameObject: {fileID: 1697447141}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -67145,7 +67486,7 @@ GameObject:
   - 33: {fileID: 1705503262}
   - 65: {fileID: 1705503261}
   - 23: {fileID: 1705503260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -67203,7 +67544,7 @@ BoxCollider:
   m_GameObject: {fileID: 1705503258}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -67227,7 +67568,7 @@ GameObject:
   - 50: {fileID: 1708584213}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67298,7 +67639,7 @@ GameObject:
   - 33: {fileID: 1708927319}
   - 65: {fileID: 1708927318}
   - 23: {fileID: 1708927317}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -67356,7 +67697,7 @@ BoxCollider:
   m_GameObject: {fileID: 1708927315}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -67562,7 +67903,7 @@ GameObject:
   - 50: {fileID: 1718507602}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67633,7 +67974,7 @@ GameObject:
   - 33: {fileID: 1719019899}
   - 65: {fileID: 1719019898}
   - 23: {fileID: 1719019897}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -67691,7 +68032,7 @@ BoxCollider:
   m_GameObject: {fileID: 1719019895}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -67713,7 +68054,7 @@ GameObject:
   - 33: {fileID: 1723302279}
   - 65: {fileID: 1723302278}
   - 23: {fileID: 1723302277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -67771,7 +68112,7 @@ BoxCollider:
   m_GameObject: {fileID: 1723302275}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -67793,7 +68134,7 @@ GameObject:
   - 33: {fileID: 1725925354}
   - 65: {fileID: 1725925353}
   - 23: {fileID: 1725925352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -67851,7 +68192,7 @@ BoxCollider:
   m_GameObject: {fileID: 1725925350}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -67873,7 +68214,7 @@ GameObject:
   - 33: {fileID: 1727481991}
   - 65: {fileID: 1727481990}
   - 23: {fileID: 1727481989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -67931,7 +68272,7 @@ BoxCollider:
   m_GameObject: {fileID: 1727481987}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -68049,7 +68390,7 @@ GameObject:
   - 33: {fileID: 1728934436}
   - 65: {fileID: 1728934435}
   - 23: {fileID: 1728934434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -68107,7 +68448,7 @@ BoxCollider:
   m_GameObject: {fileID: 1728934432}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -68204,6 +68545,77 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1729204330}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1730186223
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013389217658, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012949672490, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_Name
+      value: A*
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1606634049}
+    - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: seeker
+      value: 
+      objectReference: {fileID: 1394646421}
+    - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: rbodySeeker
+      value: 
+      objectReference: {fileID: 1394646414}
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1394646421}
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1606634049}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1730556067
 GameObject:
   m_ObjectHideFlags: 0
@@ -68301,7 +68713,7 @@ GameObject:
   - 33: {fileID: 1731742227}
   - 65: {fileID: 1731742226}
   - 23: {fileID: 1731742225}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -68359,7 +68771,7 @@ BoxCollider:
   m_GameObject: {fileID: 1731742223}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -68383,7 +68795,7 @@ GameObject:
   - 50: {fileID: 1738017124}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68820,7 +69232,7 @@ GameObject:
   - 50: {fileID: 1746346080}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68979,7 +69391,7 @@ GameObject:
   - 50: {fileID: 1747365211}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69320,7 +69732,7 @@ GameObject:
   - 50: {fileID: 1757351648}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69391,7 +69803,7 @@ GameObject:
   - 33: {fileID: 1759780479}
   - 65: {fileID: 1759780478}
   - 23: {fileID: 1759780477}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -69449,7 +69861,7 @@ BoxCollider:
   m_GameObject: {fileID: 1759780475}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -69679,7 +70091,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011868135956, guid: cf67202af546dd44d80873e3a4e38ea9, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1000013563509708, guid: cf67202af546dd44d80873e3a4e38ea9, type: 2}
       propertyPath: m_IsActive
@@ -69790,7 +70202,7 @@ GameObject:
   - 33: {fileID: 1771219820}
   - 65: {fileID: 1771219819}
   - 23: {fileID: 1771219818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 9x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -69848,7 +70260,7 @@ BoxCollider:
   m_GameObject: {fileID: 1771219816}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -69958,7 +70370,7 @@ GameObject:
   - 50: {fileID: 1772683767}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70758,7 +71170,7 @@ GameObject:
   - 50: {fileID: 1786390536}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71269,7 +71681,7 @@ GameObject:
   - 33: {fileID: 1789867217}
   - 65: {fileID: 1789867216}
   - 23: {fileID: 1789867215}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -71327,7 +71739,7 @@ BoxCollider:
   m_GameObject: {fileID: 1789867213}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -71629,7 +72041,7 @@ GameObject:
   - 50: {fileID: 1799241078}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72044,7 +72456,7 @@ GameObject:
   - 33: {fileID: 1811800729}
   - 65: {fileID: 1811800728}
   - 23: {fileID: 1811800727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -72102,7 +72514,7 @@ BoxCollider:
   m_GameObject: {fileID: 1811800725}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -72296,7 +72708,7 @@ GameObject:
   - 33: {fileID: 1818388067}
   - 65: {fileID: 1818388066}
   - 23: {fileID: 1818388065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x7 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -72354,7 +72766,7 @@ BoxCollider:
   m_GameObject: {fileID: 1818388063}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -72462,7 +72874,7 @@ GameObject:
   - 33: {fileID: 1818903965}
   - 65: {fileID: 1818903964}
   - 23: {fileID: 1818903963}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x5 (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -72520,7 +72932,7 @@ BoxCollider:
   m_GameObject: {fileID: 1818903961}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -72544,7 +72956,7 @@ GameObject:
   - 50: {fileID: 1821750220}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72617,7 +73029,7 @@ GameObject:
   - 50: {fileID: 1824570611}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72946,7 +73358,7 @@ GameObject:
   - 33: {fileID: 1830399035}
   - 65: {fileID: 1830399034}
   - 23: {fileID: 1830399033}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -73004,7 +73416,7 @@ BoxCollider:
   m_GameObject: {fileID: 1830399031}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -73026,7 +73438,7 @@ GameObject:
   - 33: {fileID: 1832485060}
   - 65: {fileID: 1832485059}
   - 23: {fileID: 1832485058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -73084,7 +73496,7 @@ BoxCollider:
   m_GameObject: {fileID: 1832485056}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -73108,7 +73520,7 @@ GameObject:
   - 50: {fileID: 1833116722}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73168,69 +73580,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.4}
---- !u!1 &1837022715
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1837022717}
-  - 108: {fileID: 1837022716}
-  m_Layer: 0
-  m_Name: Point light (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1837022716
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1837022715}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &1837022717
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1837022715}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.05, y: 4.34, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
 --- !u!1 &1837418846
 GameObject:
   m_ObjectHideFlags: 0
@@ -73426,7 +73775,7 @@ GameObject:
   - 50: {fileID: 1838310311}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73499,7 +73848,7 @@ GameObject:
   - 50: {fileID: 1846169543}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73570,7 +73919,7 @@ GameObject:
   - 33: {fileID: 1850998628}
   - 65: {fileID: 1850998627}
   - 23: {fileID: 1850998626}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -73628,7 +73977,7 @@ BoxCollider:
   m_GameObject: {fileID: 1850998624}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -73834,7 +74183,7 @@ GameObject:
   - 50: {fileID: 1855648350}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74168,7 +74517,7 @@ GameObject:
   - 50: {fileID: 1862309815}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74241,7 +74590,7 @@ GameObject:
   - 50: {fileID: 1864512921}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74314,7 +74663,7 @@ GameObject:
   - 50: {fileID: 1866015654}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74470,6 +74819,7 @@ GameObject:
   - 4: {fileID: 1869461199}
   - 212: {fileID: 1869461200}
   - 61: {fileID: 1869461201}
+  - 50: {fileID: 1869461202}
   m_Layer: 0
   m_Name: Table
   m_TagString: Wall
@@ -74503,7 +74853,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -74537,6 +74887,23 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.96, y: 0.64}
+--- !u!50 &1869461202
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1869461198}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 5
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1869571548
 GameObject:
   m_ObjectHideFlags: 0
@@ -74548,7 +74915,7 @@ GameObject:
   - 33: {fileID: 1869571552}
   - 65: {fileID: 1869571551}
   - 23: {fileID: 1869571550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 4x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -74606,7 +74973,7 @@ BoxCollider:
   m_GameObject: {fileID: 1869571548}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -76044,7 +76411,7 @@ GameObject:
   - 33: {fileID: 1900167461}
   - 65: {fileID: 1900167460}
   - 23: {fileID: 1900167459}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 6x6
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -76102,7 +76469,7 @@ BoxCollider:
   m_GameObject: {fileID: 1900167457}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -76490,7 +76857,7 @@ GameObject:
   - 50: {fileID: 1915987208}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76561,7 +76928,7 @@ GameObject:
   - 33: {fileID: 1916515634}
   - 65: {fileID: 1916515633}
   - 23: {fileID: 1916515632}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -76619,7 +76986,7 @@ BoxCollider:
   m_GameObject: {fileID: 1916515630}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -76737,7 +77104,7 @@ GameObject:
   - 33: {fileID: 1919342700}
   - 65: {fileID: 1919342699}
   - 23: {fileID: 1919342698}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -76795,7 +77162,7 @@ BoxCollider:
   m_GameObject: {fileID: 1919342696}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -76819,7 +77186,7 @@ GameObject:
   - 50: {fileID: 1922164923}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76892,7 +77259,7 @@ GameObject:
   - 50: {fileID: 1927927770}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77147,7 +77514,7 @@ GameObject:
   - 50: {fileID: 1931496828}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77304,7 +77671,7 @@ GameObject:
   - 33: {fileID: 1931722928}
   - 65: {fileID: 1931722927}
   - 23: {fileID: 1931722926}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -77362,7 +77729,7 @@ BoxCollider:
   m_GameObject: {fileID: 1931722924}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -77384,7 +77751,7 @@ GameObject:
   - 33: {fileID: 1938567327}
   - 65: {fileID: 1938567326}
   - 23: {fileID: 1938567325}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 3x0 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -77442,7 +77809,7 @@ BoxCollider:
   m_GameObject: {fileID: 1938567323}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -77836,6 +78203,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1952707447}
   - 212: {fileID: 1952707448}
+  - 61: {fileID: 1952707449}
+  - 50: {fileID: 1952707450}
   m_Layer: 0
   m_Name: ChaiseSpriteSheet_0
   m_TagString: Furniture
@@ -77869,7 +78238,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -77889,6 +78258,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &1952707449
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952707446}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+--- !u!50 &1952707450
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1952707446}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1954786138
 GameObject:
   m_ObjectHideFlags: 0
@@ -78179,7 +78579,7 @@ GameObject:
   - 50: {fileID: 1970352760}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78252,7 +78652,7 @@ GameObject:
   - 50: {fileID: 1970673893}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78325,7 +78725,7 @@ GameObject:
   - 50: {fileID: 1971332158}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78396,7 +78796,7 @@ GameObject:
   - 33: {fileID: 1971893322}
   - 65: {fileID: 1971893321}
   - 23: {fileID: 1971893320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 5x4 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -78454,7 +78854,7 @@ BoxCollider:
   m_GameObject: {fileID: 1971893318}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -78648,7 +79048,7 @@ GameObject:
   - 33: {fileID: 1984333860}
   - 65: {fileID: 1984333859}
   - 23: {fileID: 1984333858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 7x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -78706,7 +79106,7 @@ BoxCollider:
   m_GameObject: {fileID: 1984333856}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -78728,7 +79128,7 @@ GameObject:
   - 33: {fileID: 1987473185}
   - 65: {fileID: 1987473184}
   - 23: {fileID: 1987473183}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x1
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -78786,7 +79186,7 @@ BoxCollider:
   m_GameObject: {fileID: 1987473181}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -78894,7 +79294,7 @@ GameObject:
   - 33: {fileID: 1989549433}
   - 65: {fileID: 1989549432}
   - 23: {fileID: 1989549431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -78952,7 +79352,7 @@ BoxCollider:
   m_GameObject: {fileID: 1989549429}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -78974,7 +79374,7 @@ GameObject:
   - 33: {fileID: 1994388025}
   - 65: {fileID: 1994388024}
   - 23: {fileID: 1994388023}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x2
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -79032,7 +79432,7 @@ BoxCollider:
   m_GameObject: {fileID: 1994388021}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -79056,7 +79456,7 @@ GameObject:
   - 50: {fileID: 1994595095}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79397,7 +79797,7 @@ GameObject:
   - 50: {fileID: 2001557080}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79842,7 +80242,7 @@ GameObject:
   - 33: {fileID: 2007570136}
   - 65: {fileID: 2007570135}
   - 23: {fileID: 2007570134}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 9x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -79900,7 +80300,7 @@ BoxCollider:
   m_GameObject: {fileID: 2007570132}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -80096,7 +80496,7 @@ GameObject:
   - 50: {fileID: 2012024078}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80533,7 +80933,7 @@ GameObject:
   - 50: {fileID: 2019470123}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80692,7 +81092,7 @@ GameObject:
   - 50: {fileID: 2026462818}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80935,7 +81335,7 @@ GameObject:
   - 33: {fileID: 2028996939}
   - 65: {fileID: 2028996938}
   - 23: {fileID: 2028996937}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -80993,7 +81393,7 @@ BoxCollider:
   m_GameObject: {fileID: 2028996935}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -81199,7 +81599,7 @@ GameObject:
   - 50: {fileID: 2033860429}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81358,7 +81758,7 @@ GameObject:
   - 50: {fileID: 2040831286}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81525,7 +81925,7 @@ GameObject:
   - 33: {fileID: 2041630969}
   - 65: {fileID: 2041630968}
   - 23: {fileID: 2041630967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -81583,7 +81983,7 @@ BoxCollider:
   m_GameObject: {fileID: 2041630965}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -81605,7 +82005,7 @@ GameObject:
   - 33: {fileID: 2043827766}
   - 65: {fileID: 2043827765}
   - 23: {fileID: 2043827764}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x7
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -81663,7 +82063,7 @@ BoxCollider:
   m_GameObject: {fileID: 2043827762}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -81685,7 +82085,7 @@ GameObject:
   - 33: {fileID: 2043968240}
   - 65: {fileID: 2043968239}
   - 23: {fileID: 2043968238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 10x0 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -81743,7 +82143,7 @@ BoxCollider:
   m_GameObject: {fileID: 2043968236}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -82212,7 +82612,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -82607,7 +83007,7 @@ GameObject:
   - 33: {fileID: 2065778523}
   - 65: {fileID: 2065778522}
   - 23: {fileID: 2065778521}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 2x5
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -82665,7 +83065,7 @@ BoxCollider:
   m_GameObject: {fileID: 2065778519}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -83041,7 +83441,7 @@ GameObject:
   - 33: {fileID: 2096755790}
   - 65: {fileID: 2096755789}
   - 23: {fileID: 2096755788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 1x4
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -83099,7 +83499,7 @@ BoxCollider:
   m_GameObject: {fileID: 2096755786}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -83123,7 +83523,7 @@ GameObject:
   - 50: {fileID: 2097492911}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83192,6 +83592,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2098142491}
   - 212: {fileID: 2098142492}
+  - 61: {fileID: 2098142493}
+  - 50: {fileID: 2098142494}
   m_Layer: 0
   m_Name: ComodeSpriteSheet_1
   m_TagString: Furniture
@@ -83225,7 +83627,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -83245,6 +83647,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &2098142493
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098142490}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.32}
+--- !u!50 &2098142494
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098142490}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 4
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2098254432
 GameObject:
   m_ObjectHideFlags: 0
@@ -83256,7 +83689,7 @@ GameObject:
   - 33: {fileID: 2098254436}
   - 65: {fileID: 2098254435}
   - 23: {fileID: 2098254434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 12x8
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -83314,7 +83747,7 @@ BoxCollider:
   m_GameObject: {fileID: 2098254432}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -83338,7 +83771,7 @@ GameObject:
   - 50: {fileID: 2098522695}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83409,7 +83842,7 @@ GameObject:
   - 33: {fileID: 2098648729}
   - 65: {fileID: 2098648728}
   - 23: {fileID: 2098648727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 0x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -83467,7 +83900,7 @@ BoxCollider:
   m_GameObject: {fileID: 2098648725}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -83941,7 +84374,7 @@ GameObject:
   - 50: {fileID: 2114111114}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84014,7 +84447,7 @@ GameObject:
   - 50: {fileID: 2114328759}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84269,7 +84702,7 @@ GameObject:
   - 50: {fileID: 2123258988}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84942,69 +85375,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &2135665690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2135665692}
-  - 108: {fileID: 2135665691}
-  m_Layer: 0
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &2135665691
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2135665690}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: 3
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &2135665692
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2135665690}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.73, y: 3.06, z: -0.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
 --- !u!1 &2136101506
 GameObject:
   m_ObjectHideFlags: 0
@@ -85286,7 +85656,7 @@ GameObject:
   - 50: {fileID: 2142763267}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85357,7 +85727,7 @@ GameObject:
   - 33: {fileID: 2144583084}
   - 65: {fileID: 2144583083}
   - 23: {fileID: 2144583082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall 14x0
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -85415,7 +85785,7 @@ BoxCollider:
   m_GameObject: {fileID: 2144583080}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -85439,7 +85809,7 @@ GameObject:
   - 50: {fileID: 2145088982}
   m_Layer: 0
   m_Name: WallCollider
-  m_TagString: Untagged
+  m_TagString: WallCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85594,6 +85964,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2146594673}
   - 212: {fileID: 2146594674}
+  - 61: {fileID: 2146594675}
+  - 50: {fileID: 2146594676}
   m_Layer: 0
   m_Name: ChaiseSpriteSheet_0 (1)
   m_TagString: Furniture
@@ -85627,7 +85999,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 895bad5b84e1bcf4cbe1cf06d0276d7e, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -85647,3 +86019,34 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!61 &2146594675
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2146594672}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+--- !u!50 &2146594676
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2146594672}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
