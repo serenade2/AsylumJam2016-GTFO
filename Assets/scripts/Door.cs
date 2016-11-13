@@ -15,10 +15,13 @@ public class Door : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
     private PlayerMovement _playerMovement;
+    private GlobalAttributes _globalAttributes;
+
     // Use this for initialization
     void Start ()
     {
         _playerMovement = null;
+        _globalAttributes = null;
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 	
@@ -48,11 +51,26 @@ public class Door : MonoBehaviour
                 }
             }
 
-            Debug.Log(String.Format("{0} collision entered in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
+           // Debug.Log(String.Format("{0} collision entered in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
         }
         else if (coll.gameObject.tag.Equals("Enemy"))
         {
-            Debug.Log(String.Format("{0} collision entered in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
+            _globalAttributes = coll.gameObject.GetComponent<GlobalAttributes>();
+            if (_globalAttributes != null && _spriteRenderer != null)
+            {
+                float enemyVectorX = _globalAttributes.movement_vector.x;
+                float enemyVectorY = _globalAttributes.movement_vector.y;
+
+                if (enemyVectorY == 1.0f || enemyVectorY == -1.0f)
+                {
+                    _spriteRenderer.sprite = HorizontalDoorSmashedSprite;
+                }
+                else if (enemyVectorX == 1.0f || enemyVectorX == -1.0f)
+                {
+                    _spriteRenderer.sprite = VerticalDoorSmashedSprite;
+                }
+            }
+            Debug.Log(String.Format("{1} entering smashed the {0}!!", this.gameObject.tag, coll.gameObject.tag));
         }
     }
 
@@ -72,11 +90,27 @@ public class Door : MonoBehaviour
                     _spriteRenderer.sprite = VerticalDoorClosedSprite;
                 }
             }
-            Debug.Log(String.Format("{0} collision exited collision with {1}", this.gameObject.tag, coll.gameObject.tag));
+            //Debug.Log(String.Format("{0} collision exited collision with {1}", this.gameObject.tag, coll.gameObject.tag));
         }
         else if (coll.gameObject.tag.Equals("Enemy"))
         {
-            Debug.Log(String.Format("{0} collision exit in collision with {1}", this.gameObject.tag, coll.gameObject.tag));
+            _globalAttributes = coll.gameObject.GetComponent<GlobalAttributes>();
+            if (_globalAttributes != null && _spriteRenderer != null)
+            {
+                float enemyVectorX = _globalAttributes.movement_vector.x;
+                float enemyVectorY = _globalAttributes.movement_vector.y;
+
+                if (enemyVectorY == 1.0f || enemyVectorY == -1.0f)
+                {
+                    _spriteRenderer.sprite = HorizontalDoorSmashedSprite;
+                }
+                else if (enemyVectorX == 1.0f || enemyVectorX == -1.0f)
+                {
+                    _spriteRenderer.sprite = VerticalDoorSmashedSprite;
+                }
+            }
+
+            Debug.Log(String.Format("{1} exiting smashed the {0}!!!", this.gameObject.tag, coll.gameObject.tag));
         }
     }
 
