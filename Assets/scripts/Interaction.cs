@@ -52,4 +52,17 @@ public class Interaction : MonoBehaviour
             this.transform.localPosition = offsetVector2;
         }
     }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag.Equals("Floor"))
+        {
+            
+        }
+    }
+
+    public void PlaceTrap(GameObject trap)
+    {
+        
+    }
 }
