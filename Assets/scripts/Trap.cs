@@ -36,8 +36,8 @@ public class Trap : MonoBehaviour
             // thanks to :  Mmmpies at : http://answers.unity3d.com/questions/863050/adding-cooldown-c.html
             if (Time.time > _startElapsedTime + TrapEffectTime && _playerMovement != null)
 	        {
-                // release the player after the cool down of the specific trap
-	            _playerMovement.isTrapped = false;
+                // release the player after the cool down of the specific trap             
+                _playerMovement.isTrapped = false;
 	            _characterIsTrapped = false;
 	            _spriteRenderer.sprite = IdleSprite;
 	        }
@@ -77,6 +77,11 @@ public class Trap : MonoBehaviour
 
     private void CenterTrappedCharacter(GameObject characterGameObject)
     {
-        characterGameObject.transform.position = this.transform.position;
+        Vector3 currentPosition = this.transform.position;
+        Vector3 characterPosition = characterGameObject.transform.position;
+        characterPosition.x = currentPosition.x;
+        characterPosition.y = currentPosition.y;
+
+        characterGameObject.transform.position = characterPosition;
     }
 }
