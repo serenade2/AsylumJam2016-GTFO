@@ -3,9 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour {
-
-    public float timeLeftInSeconds = 180.0f;
-
+    
     public Text timerText;
 
     public Image trap1Image;
@@ -32,15 +30,15 @@ public class GameUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         
+        float timeInSeconds = GameManager.Instance.GetTime();
+
         int minutes;
         int seconds;
 
-        timeLeftInSeconds -= Time.deltaTime;
+        minutes = (int)(timeInSeconds / 60);
+        seconds = (int)(timeInSeconds % 60);
 
-        minutes = (int)(timeLeftInSeconds / 60);
-        seconds = (int)(timeLeftInSeconds % 60);
-
-        timerText.text = minutes + " : " + seconds;
+        timerText.text = string.Format("{0:0}:{1:00}", minutes, seconds);
 
     }
 
