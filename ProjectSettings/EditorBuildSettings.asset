@@ -9,3 +9,7 @@ EditorBuildSettings:
     path: Assets/scenes/Integration/JAMES.unity
   - enabled: 1
     path: Assets/scenes/UI/MainMenu.unity
+  - enabled: 1
+    path: Assets/scenes/Credits.unity
+  - enabled: 1
+    path: Assets/scenes/Ending.unity
