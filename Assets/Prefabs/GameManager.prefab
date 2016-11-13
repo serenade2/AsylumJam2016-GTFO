@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011789660418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.11, y: -3.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -53,7 +53,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundList:
+  - {fileID: 8300000, guid: 89a77a40ed2f29844aa5fb57de0211c3, type: 3}
   - {fileID: 8300000, guid: 348fc249f87193a43a4834477614081e, type: 3}
+  - {fileID: 8300000, guid: fc9fb896d556fd24e8902c7fc48f8505, type: 3}
+  - {fileID: 8300000, guid: 0d4b7e47f429ee54aa09259781fbedea, type: 3}
+  - {fileID: 8300000, guid: ee3984d17c2854548b020e4d74c8a164, type: 3}
+  - {fileID: 8300000, guid: 2e00292300f4ff14598b94c895014d32, type: 3}
   soundPlayerPrefab: {fileID: 82000011483983704, guid: 88d558c6330ef5546afaa96c12466ded,
     type: 2}
   minimumPitch: 0.95
@@ -83,6 +88,6 @@ MonoBehaviour:
   Wall2DPrefab: {fileID: 1000013579272080, guid: b53a99f5285b7a84bbce707daa55cfd1,
     type: 2}
   DoorPrefab: {fileID: 1000011468029946, guid: 31996fac1c5c68b43a2b838789d4c11a, type: 2}
-  RoomId: 0
-  RoomSizeX: 4
-  RoomSizeY: 8
+  RoomId: 8
+  RoomSizeX: 5
+  RoomSizeY: 3
