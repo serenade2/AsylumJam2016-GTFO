@@ -30864,27 +30864,7 @@ Prefab:
     - target: {fileID: 114000013252253934, guid: 56afc04fce477c346bc638163389e7d3,
         type: 2}
       propertyPath: m_CachedInstanceID
-      value: -64536
-      objectReference: {fileID: 0}
-    - target: {fileID: 50000012428800428, guid: 56afc04fce477c346bc638163389e7d3,
-        type: 2}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000010974150982, guid: 56afc04fce477c346bc638163389e7d3,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000010974150982, guid: 56afc04fce477c346bc638163389e7d3,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 61000010974150982, guid: 56afc04fce477c346bc638163389e7d3,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.01
+      value: 280006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
@@ -70793,6 +70773,11 @@ Prefab:
         type: 2}
       propertyPath: SpeedIncreasePerMinute
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: nodeRadius
+      value: 0.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
