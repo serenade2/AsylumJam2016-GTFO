@@ -8,6 +8,7 @@ public class Interaction : MonoBehaviour
     public float OffsetDistanceX = 0.281f;
     public float OffsetDistanceY = 0.281f;
     public float SetTrapDuration = 1.0f;
+    public float SetTrapDurationSecIncreasePerMin = 0.5f;
     private float _trapFillAmount;
     private GameObject _selectedFloor;
 
@@ -22,6 +23,9 @@ public class Interaction : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+        float nbSecPass = GameManager.Instance.GetTime();
+        float realSetTrapDuration = SetTrapDuration + SetTrapDurationSecIncreasePerMin / 60 * nbSecPass;
+
         _parentLookingDirection = GetComponentInParent<Transform>().position;
 	    Vector3 currentPosition = this.transform.position;
 	    Vector3 offsetVector3;
