@@ -55227,6 +55227,7 @@ GameObject:
   - 212: {fileID: 1426279865}
   - 61: {fileID: 1426279864}
   - 50: {fileID: 1426279863}
+  - 114: {fileID: 1426279866}
   m_Layer: 11
   m_Name: Door 0x2
   m_TagString: Door
@@ -55311,6 +55312,30 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1426279866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1426279861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d00aa9bff248d43b3c40db691aa041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsOpen: 0
+  HorizontalDoorClosedSprite: {fileID: 21300000, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  HorizontalDoorOpenedSprite: {fileID: 21300002, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  HorizontalDoorSmashedSprite: {fileID: 21300004, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorClosedSprite: {fileID: 21300006, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorOpenedSprite: {fileID: 21300008, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorSmashedSprite: {fileID: 21300010, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
 --- !u!1 &1426523710
 GameObject:
   m_ObjectHideFlags: 0
@@ -69491,6 +69516,7 @@ GameObject:
   - 212: {fileID: 1779261664}
   - 61: {fileID: 1779261663}
   - 50: {fileID: 1779261662}
+  - 114: {fileID: 1779261665}
   m_Layer: 11
   m_Name: Door 0x3
   m_TagString: Door
@@ -69575,6 +69601,30 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1779261665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1779261660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d00aa9bff248d43b3c40db691aa041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsOpen: 0
+  HorizontalDoorClosedSprite: {fileID: 21300000, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  HorizontalDoorOpenedSprite: {fileID: 21300002, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  HorizontalDoorSmashedSprite: {fileID: 21300004, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorClosedSprite: {fileID: 21300006, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorOpenedSprite: {fileID: 21300008, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorSmashedSprite: {fileID: 21300010, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
 --- !u!1 &1780164246
 GameObject:
   m_ObjectHideFlags: 0
