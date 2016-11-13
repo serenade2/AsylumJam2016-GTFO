@@ -10,6 +10,7 @@ TagManager:
   - Door
   - Trap
   - Enemy
+  - WallCollider
   layers:
   - Default
   - TransparentFX
