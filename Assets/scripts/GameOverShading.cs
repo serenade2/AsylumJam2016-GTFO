@@ -32,7 +32,9 @@ public class GameOverShading : MonoBehaviour
             MaterialPostEffect.SetColor("_TintColor", new Color(-FadeOutPerSecond * _time + DelayBeforeFadeOut, 1 - RedPerSecond * _time, 1 - RedPerSecond * _time));
             float frequency = MinFrequency + _time * FrequencyPerSecond;
             MaterialPostEffect.SetFloat("_FreqX", frequency <= MaxFrequency ? frequency : MaxFrequency);
-            Graphics.Blit(source, destination, MaterialPostEffect);
+            RenderTexture intermediate = new RenderTexture(source.width, source.height, source.depth);
+            Graphics.Blit(source, intermediate, MaterialPostEffect);
+            Graphics.Blit(intermediate, destination);
         }
         else
             Graphics.Blit(source, destination);

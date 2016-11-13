@@ -34,7 +34,9 @@ public class ExplosionShading : MonoBehaviour
         if (MaterialPostEffect != null)
         {
             MaterialPostEffect.SetFloat("__Time", _time);
-            Graphics.Blit(source, destination, MaterialPostEffect);
+            RenderTexture intermediate = new RenderTexture(source.width, source.height, source.depth);
+            Graphics.Blit(source, intermediate, MaterialPostEffect);
+            Graphics.Blit(intermediate, destination);
         }
         else
             Graphics.Blit(source, destination);

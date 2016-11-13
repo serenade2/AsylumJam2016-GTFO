@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e147d89f456b08c4b99e398fa7319a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: UITest
+  firstLevel: MainTheHouse
 --- !u!4 &1332409794
 Transform:
   m_ObjectHideFlags: 0

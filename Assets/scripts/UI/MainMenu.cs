@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    public string firstLevel = "UITest";
+    public string firstLevel = "MainTheHouse";
 
     // Use this for initialization
     void Start() {
