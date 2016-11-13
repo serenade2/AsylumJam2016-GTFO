@@ -46,10 +46,10 @@ public class GameUI : MonoBehaviour {
     void OnGUI()
     {
         
-        trap1Text.text = " x " + trap1Counter;
-        trap2Text.text = " x " + trap2Counter;
-        trap3Text.text = " x " + trap3Counter;
-        trap4Text.text = " x " + trap4Counter;
+        //trap1Text.text = " x " + trap1Counter;
+        //trap2Text.text = " x " + trap2Counter;
+        //trap3Text.text = " x " + trap3Counter;
+        //trap4Text.text = " x " + trap4Counter;
 
     }
 }
