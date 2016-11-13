@@ -4962,6 +4962,27 @@ Prefab:
       propertyPath: m_Name
       value: BearTrap
       objectReference: {fileID: 0}
+    - target: {fileID: 212000012313527774, guid: d47f9c11f237e654a860aa3112098bc5,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f0e1d0c8c2b54f24482d8e81aec4cee2,
+        type: 3}
+    - target: {fileID: 212000012313527774, guid: d47f9c11f237e654a860aa3112098bc5,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000012313527774, guid: d47f9c11f237e654a860aa3112098bc5,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000012313527774, guid: d47f9c11f237e654a860aa3112098bc5,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d47f9c11f237e654a860aa3112098bc5, type: 2}
   m_IsPrefabParent: 0
