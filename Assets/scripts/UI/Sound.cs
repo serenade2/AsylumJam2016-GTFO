@@ -40,18 +40,16 @@ public class Sound : MonoBehaviour {
             return;
         }
 
+        
+
         soundManager[currentSound].clip = sfx;
         soundManager[currentSound].pitch = Random.Range(minimumPitch, maximumPitch);
         AdjustVolumeForDistance(distance);
         soundManager[currentSound].Play();
-
-        if(currentSound == soundCapacity)
+        currentSound++;
+        if (currentSound == soundCapacity)
         {
             currentSound = 0;
-        }
-        else
-        {
-            currentSound++;
         }
 
     }
