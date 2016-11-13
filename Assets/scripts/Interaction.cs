@@ -42,13 +42,11 @@ public class Interaction : MonoBehaviour
 
         if (horizontalAxis == 1.0f)
         {
-            Debug.Log("Horizontal Axis :" + horizontalAxis);
             offsetVector3 = new Vector3((currentPosition.x + OffsetDistanceX) - _parentLookingDirection.x, currentPosition.y - _parentLookingDirection.y, 1);
             this.transform.localPosition = offsetVector3;
         }
         else if (horizontalAxis == -1.0f)
         {
-            Debug.Log("Horizontal Axis :" + horizontalAxis);
             offsetVector3 = new Vector3((currentPosition.x + OffsetDistanceX)*-1 + _parentLookingDirection.x, currentPosition.y - _parentLookingDirection.y, 1);
             this.transform.localPosition = offsetVector3;
         }
@@ -58,7 +56,7 @@ public class Interaction : MonoBehaviour
     {
         if (coll.gameObject.tag.Equals("Floor"))
         {
-            
+            Debug.Log("Interaction collided with" + coll.gameObject.name);
         }
     }
 
