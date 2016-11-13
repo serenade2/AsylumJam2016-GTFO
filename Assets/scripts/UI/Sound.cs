@@ -5,8 +5,8 @@ public class Sound : MonoBehaviour {
 
     public static Sound Instance { get; private set; }
 
-    AudioSource soundPlayer = new AudioSource();
-    public AudioClip song;
+    public AudioClip[] SoundList;
+    public AudioSource soundPlayerPrefab;
     public float minimumPitch = 0.95f;
     public float maximumPitch = 1.05f;
     public int soundCapacity = 10;
@@ -20,15 +20,19 @@ public class Sound : MonoBehaviour {
 
         soundManager = new AudioSource[soundCapacity];
 
-        for(int i = 0; i < soundManager.Length; i++)
+        for (int i = 0; i < soundManager.Length; i++)
         {
-            soundManager[i] = Instantiate(soundPlayer);
+            soundManager[i] = Instantiate(soundPlayerPrefab);
             soundManager[i].transform.parent = transform;
         }
-
     }
 
-    public void PlaySound(AudioClip sfx, int distance)
+    public void PlaySound(int index, int distance = 1)
+    {
+        PlaySound(SoundList[index], distance);
+    }
+
+    public void PlaySound(AudioClip sfx, int distance = 1)
     {
 
         if(sfx == null)
