@@ -177,4 +177,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3.0f);
         SceneManager.LoadScene("UI/MainMenu");
     }
+
+    public void ExplodeAtLocation(Vector3 position)
+    {
+        Camera.main.GetComponent<ExplosionShading>().FireExplosion(position);
+    }
 }

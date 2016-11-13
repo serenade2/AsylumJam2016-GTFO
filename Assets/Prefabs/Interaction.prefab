@@ -67,8 +67,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f0184b4a05c0e4eb6d84bc90874d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrapPrefabs:
+  - {fileID: 1000014240701508, guid: d6834fb349b017746bf5a613e4d5eb66, type: 2}
+  - {fileID: 1000014263653444, guid: 1ad14238d600d8c45837cebfd0315255, type: 2}
   OffsetDistanceX: 0.281
   OffsetDistanceY: 0.281
+  SetTrapDuration: 1
 --- !u!212 &212000011885653868
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -76,7 +76,7 @@ MonoBehaviour:
   GameOverBackground: {fileID: 0}
   GameOverMessage: {fileID: 0}
   ProgressBar: {fileID: 0}
-  FloorPrefab: {fileID: 1000012149527812, guid: cefbbe63867e8bd4a98ebacba2b3ae5a,
+  FloorPrefab: {fileID: 1000012149527812, guid: 4534cb56eb496ae4aa976844689f9553,
     type: 2}
   Wall3DPrefab: {fileID: 1000013928343762, guid: 20ef5f7a69a1a43488dc9682d12172e9,
     type: 2}

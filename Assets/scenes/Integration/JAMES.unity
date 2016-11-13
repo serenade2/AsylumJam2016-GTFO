@@ -1022,11 +1022,11 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 320261066}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -5503,8 +5503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f0184b4a05c0e4eb6d84bc90874d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TrapPrefabs: []
   OffsetDistanceX: 0.281
   OffsetDistanceY: 0.281
+  SetTrapDuration: 1
 --- !u!1001 &1267948373
 Prefab:
   m_ObjectHideFlags: 0

@@ -22,6 +22,7 @@ GameObject:
   - 212: {fileID: 212000011353370582}
   - 61: {fileID: 61000010512283548}
   - 50: {fileID: 50000011391918502}
+  - 114: {fileID: 114000011652910532}
   m_Layer: 11
   m_Name: DoorPlaceholder
   m_TagString: Door
@@ -73,6 +74,30 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
+--- !u!114 &114000011652910532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011468029946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d00aa9bff248d43b3c40db691aa041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsOpen: 0
+  HorizontalDoorClosedSprite: {fileID: 21300000, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  HorizontalDoorOpenedSprite: {fileID: 21300002, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  HorizontalDoorSmashedSprite: {fileID: 21300004, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorClosedSprite: {fileID: 21300006, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorOpenedSprite: {fileID: 21300008, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
+  VerticalDoorSmashedSprite: {fileID: 21300010, guid: dd706dca530de9b4aaa3433904052c77,
+    type: 3}
 --- !u!212 &212000011353370582
 SpriteRenderer:
   m_ObjectHideFlags: 1
