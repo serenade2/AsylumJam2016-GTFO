@@ -9,13 +9,20 @@ public class Trap : MonoBehaviour
     private float _startElapsedTime;
     private bool _characterIsTrapped;
 
+    public Sprite IdleSprite;
+    public Sprite ActivatedSprite;
+
+    private SpriteRenderer _spriteRenderer;
     private PlayerMovement _playerMovement;
+
 	// Use this for initialization
 	void Start ()
 	{
 	    _characterIsTrapped = false;
 	    _playerMovement = null;
 	    _startElapsedTime = 0.0f;
+	    _spriteRenderer = GetComponent<SpriteRenderer>();
+	    _spriteRenderer.sprite = IdleSprite;
 	}
 	
 	// Update is called once per frame
@@ -32,6 +39,7 @@ public class Trap : MonoBehaviour
                 // release the player after the cool down of the specific trap
 	            _playerMovement.isTrapped = false;
 	            _characterIsTrapped = false;
+	            _spriteRenderer.sprite = IdleSprite;
 	        }
 	    }
 	}
@@ -46,6 +54,8 @@ public class Trap : MonoBehaviour
             if (_playerMovement != null)
             {
                 _playerMovement.isTrapped = true;
+                _spriteRenderer.sprite = ActivatedSprite;
+
                 _characterIsTrapped = true;
                 _startElapsedTime = Time.time;
                 CenterTrappedCharacter(coll.gameObject);
