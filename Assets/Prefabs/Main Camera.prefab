@@ -25,6 +25,7 @@ GameObject:
   - 81: {fileID: 81000011384952666}
   - 114: {fileID: 114000010502053346}
   - 114: {fileID: 114000010785087628}
+  - 114: {fileID: 114000010806055504}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -180,6 +181,17 @@ MonoBehaviour:
   MaterialPostEffect: {fileID: 2100000, guid: 9b4a447d80c0cd946af15ab5978d0211, type: 2}
   TestExplosionLocation: {x: 0, y: 0, z: 0}
   Explode: 0
+--- !u!114 &114000010806055504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011439772162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfd09d033b99964385d97fedda1cc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000011230133508
 MonoBehaviour:
   m_ObjectHideFlags: 1
