@@ -3,26 +3,67 @@ using System.Collections;
 
 public class Interaction : MonoBehaviour
 {
-    private Transform _parentLookingDirection;
-    public  float _offsetDistance;
+    private Vector2 _parentLookingDirection;
+    public float OffsetDistanceX = 0.281f;
+    public float OffsetDistanceY = 0.281f;
 	// Use this for initialization
 	void Start ()
 	{
-	    _parentLookingDirection = GetComponentInParent<Transform>();
-        //_offsetDistance = 
+	  
 	}
 	
 	// Update is called once per frame
 	void Update ()
-    {
-        //Debug.Log("Vertical axis " + Input.GetAxisRaw("Vertical"));
+	{
+        _parentLookingDirection = GetComponentInParent<Transform>().position;
+	    Vector3 currentPosition = this.transform.position;
+	    Vector3 offsetVector3;
 	    float verticalAxis = Input.GetAxisRaw("Vertical");
 	    float horizontalAxis = Input.GetAxisRaw("Horizontal");
-
+	   
 	    if (verticalAxis == 0.0f)
 	    {
-	        //this.transform.position.x *=
-	    }
+            offsetVector3 = new Vector3(currentPosition.x - _parentLookingDirection.x, currentPosition.y - _parentLookingDirection.y, 1);
+     
+            this.transform.localPosition = offsetVector3;
+        }
+        else if (verticalAxis == 1.0f)
+        {
+
+            offsetVector3 = new Vector3(currentPosition.x - _parentLookingDirection.x, (currentPosition.y + OffsetDistanceY)-_parentLookingDirection.y, 1);
+            this.transform.localPosition = offsetVector3;
+        }
+        else if (verticalAxis == -1.0f)
+        {
+
+            offsetVector3 = new Vector3(currentPosition.x - _parentLookingDirection.x, (currentPosition.y + OffsetDistanceY)*-1 + _parentLookingDirection.y, 1);
+            this.transform.localPosition = offsetVector3;
+        }
+
+        if (horizontalAxis == 1.0f)
+        {
+            Debug.Log("Horizontal Axis :" + horizontalAxis);
+            offsetVector3 = new Vector3((currentPosition.x + OffsetDistanceX) - _parentLookingDirection.x, currentPosition.y - _parentLookingDirection.y, 1);
+            this.transform.localPosition = offsetVector3;
+        }
+        else if (horizontalAxis == -1.0f)
+        {
+            Debug.Log("Horizontal Axis :" + horizontalAxis);
+            offsetVector3 = new Vector3((currentPosition.x + OffsetDistanceX)*-1 + _parentLookingDirection.x, currentPosition.y - _parentLookingDirection.y, 1);
+            this.transform.localPosition = offsetVector3;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag.Equals("Floor"))
+        {
+            
+        }
+    }
+
+    public void PlaceTrap(GameObject trap)
+    {
         
     }
 }
