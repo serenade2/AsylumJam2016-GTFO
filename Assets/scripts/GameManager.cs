@@ -33,7 +33,11 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         _isTimeStopped = false;
-        Instance = this;
+
+        if (Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     void FixedUpdate()
