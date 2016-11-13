@@ -14,6 +14,7 @@ public class Pathfinding : MonoBehaviour
     private GlobalAttributes _globalAttributes;
     Grid grid;
     public List<Node> pathToTarget;
+    Animator anim;
 
     void Awake()
     {
@@ -23,6 +24,7 @@ public class Pathfinding : MonoBehaviour
     void Start()
     {
         grid = GetComponent<Grid>();
+        anim = EnemyGameObject.GetComponent<Animator>();
     }
 
    
@@ -68,6 +70,9 @@ public class Pathfinding : MonoBehaviour
                         // moving down
                         movementVector2.y = -1.0f;
                     }
+                    anim.SetBool("isWalking", true);
+                    anim.SetFloat("input_x", movementVector2.x);
+                    anim.SetFloat("input_y", movementVector2.y);
 
                     _globalAttributes.set_movement_vector(movementVector2);
 

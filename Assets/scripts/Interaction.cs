@@ -76,7 +76,7 @@ public class Interaction : MonoBehaviour
         }
 	    if (_selectedFloor != null)
 	    {
-	        GameManager.Instance.ProgressBar.SetPosition(_selectedFloor.transform.position);
+	        GameManager.Instance.ProgressBar.SetPosition(transform.position);
 	        GameManager.Instance.ProgressBar.SetFillAmount(_trapFillAmount/SetTrapDuration);
 	    }
 	    else
@@ -111,6 +111,6 @@ public class Interaction : MonoBehaviour
     {
         Sound.Instance.PlaySound(5);
         GameObject newTrap = Instantiate(trap);
-        newTrap.transform.position = _selectedFloor.transform.position;
+        newTrap.transform.position = transform.position;
     }
 }
