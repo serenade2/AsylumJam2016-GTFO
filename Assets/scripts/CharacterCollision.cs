@@ -64,6 +64,11 @@ public class CharacterCollision : MonoBehaviour
         {
             touchedFurniture = coll;
         }
+        else if (coll.gameObject.tag.Equals("Enemy"))
+        {
+            if (Vector3.Distance(coll.transform.position, transform.position) <= 1.1f)
+                GameManager.Instance.TriggerGameOverEvent();
+        }
     }
 
     void OnTriggerExit2D(Collider2D coll)
