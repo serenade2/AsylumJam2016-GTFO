@@ -144,7 +144,7 @@ Material:
       second: 1
     - first:
         name: __Time
-      second: 2.739998
+      second: 2.3599985
     m_Colors:
     - first:
         name: _Color
@@ -154,4 +154,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _TintColor
-      second: {r: 0.2600019, g: -1.7399981, b: -1.7399981, a: 1}
+      second: {r: 0.64000154, g: -1.3599985, b: -1.3599985, a: 1}

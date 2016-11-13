@@ -129,10 +129,10 @@ Material:
       second: 1
     - first:
         name: pX
-      second: 0.44000176
+      second: 0.54577565
     - first:
         name: pY
-      second: 0.5144805
+      second: 0.5189862
     - first:
         name: size
       second: 2.04
