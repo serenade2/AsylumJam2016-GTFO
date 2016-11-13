@@ -15,7 +15,7 @@ public class Interaction : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        Debug.Log("Vertical axis " + Input.GetAxisRaw("Vertical"));
+        //Debug.Log("Vertical axis " + Input.GetAxisRaw("Vertical"));
 	    float verticalAxis = Input.GetAxisRaw("Vertical");
 	    float horizontalAxis = Input.GetAxisRaw("Horizontal");
 
