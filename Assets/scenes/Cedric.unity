@@ -1594,13 +1594,18 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013490964184, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013490964184, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000013490964184, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1628,29 +1633,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
         type: 2}
-      propertyPath: RoomId
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
-        type: 2}
-      propertyPath: RoomSizeX
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
-        type: 2}
-      propertyPath: RoomSizeY
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
-        type: 2}
-      propertyPath: ProgressBar
+      propertyPath: GameOverBackground
       value: 
-      objectReference: {fileID: 216529666}
-    - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
-        type: 2}
-      propertyPath: GameOverCanvas
-      value: 
-      objectReference: {fileID: 1067949330}
+      objectReference: {fileID: 10647563}
     - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
         type: 2}
       propertyPath: GameOverMessage
@@ -1658,9 +1643,14 @@ Prefab:
       objectReference: {fileID: 386576334}
     - target: {fileID: 114000012834412960, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
         type: 2}
-      propertyPath: GameOverBackground
+      propertyPath: ProgressBar
       value: 
-      objectReference: {fileID: 10647563}
+      objectReference: {fileID: 216529666}
+    - target: {fileID: 114000012315037754, guid: 9802be22d9de37a4d9dab3f6705fbe3a,
+        type: 2}
+      propertyPath: SoundList.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 348fc249f87193a43a4834477614081e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9802be22d9de37a4d9dab3f6705fbe3a, type: 2}
   m_IsPrefabParent: 0
@@ -27963,6 +27953,80 @@ MonoBehaviour:
   DelayBeforeFadeOut: 4
   FadeOutPerSecond: 1
   IsShading: 0
+--- !u!82 &1961632015
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961632013}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 23453725f8fd116498367b9e973a25d5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1966511813
 GameObject:
   m_ObjectHideFlags: 0

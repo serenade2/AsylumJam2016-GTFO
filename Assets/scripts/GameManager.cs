@@ -123,8 +123,14 @@ public class GameManager : MonoBehaviour
         StartCoroutine(TriggerGameOver());
     }
 
-    public IEnumerator TriggerGameOver()
+    public void TriggerGameOverEvent()
     {
+        StartCoroutine(TriggerGameOver());
+    }
+
+    private IEnumerator TriggerGameOver()
+    {
+        Sound.Instance.PlaySound(0);
         Camera.main.GetComponent<GameOverShading>().IsShading = true;
         yield return new WaitForSeconds(5);
         Camera.main.GetComponent<GameOverShading>().IsShading = false;

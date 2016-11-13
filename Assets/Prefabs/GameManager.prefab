@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013490964184}
   - 114: {fileID: 114000012834412960}
+  - 114: {fileID: 114000012315037754}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -40,6 +41,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &114000012315037754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011789660418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f60b9af347cc4748aa73f17dbaf641c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundList:
+  - {fileID: 8300000, guid: 348fc249f87193a43a4834477614081e, type: 3}
+  soundPlayerPrefab: {fileID: 82000011483983704, guid: 88d558c6330ef5546afaa96c12466ded,
+    type: 2}
+  minimumPitch: 0.95
+  maximumPitch: 1.05
+  soundCapacity: 10
 --- !u!114 &114000012834412960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,8 +70,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67aa5b2751e282f4f83c595cbce1571b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOver: 0
   AlignTiles: 0
   Generate: 0
+  GameOverBackground: {fileID: 0}
+  GameOverMessage: {fileID: 0}
+  ProgressBar: {fileID: 0}
   FloorPrefab: {fileID: 1000012149527812, guid: cefbbe63867e8bd4a98ebacba2b3ae5a,
     type: 2}
   Wall3DPrefab: {fileID: 1000013928343762, guid: 20ef5f7a69a1a43488dc9682d12172e9,
@@ -61,5 +84,5 @@ MonoBehaviour:
     type: 2}
   DoorPrefab: {fileID: 1000011468029946, guid: 31996fac1c5c68b43a2b838789d4c11a, type: 2}
   RoomId: 0
-  RoomSizeX: 5
-  RoomSizeY: 5
+  RoomSizeX: 4
+  RoomSizeY: 8
