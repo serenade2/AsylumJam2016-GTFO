@@ -31,7 +31,7 @@ public class Trap : MonoBehaviour
 	    if (_playerIsTrapped)
 	    {
 	        //float elapsedTime = Time.deltaTime;
-            Debug.Log(String.Format("{0} seconds elapsed since character is trapped", _startElapsedTime));
+            //Debug.Log(String.Format("{0} seconds elapsed since character is trapped", _startElapsedTime));
             
             // thanks to :  Mmmpies at : http://answers.unity3d.com/questions/863050/adding-cooldown-c.html
             if (Time.time > _startElapsedTime + TrapEffectTime && _playerMovement != null)
@@ -46,7 +46,7 @@ public class Trap : MonoBehaviour
         if (_enemyIsTrapped)
         {
             //float elapsedTime = Time.deltaTime;
-            Debug.Log(String.Format("{0} seconds elapsed since character is trapped", _startElapsedTime));
+            //Debug.Log(String.Format("{0} seconds elapsed since character is trapped", _startElapsedTime));
 
             // thanks to :  Mmmpies at : http://answers.unity3d.com/questions/863050/adding-cooldown-c.html
             if (Time.time > _startElapsedTime + TrapEffectTime && _globalAttributes != null)
@@ -63,7 +63,7 @@ public class Trap : MonoBehaviour
     {
         if (coll.gameObject.tag.Equals("Player"))
         {
-            Debug.Log(String.Format("{0} entered in collision with {1}", coll.gameObject.tag, this.gameObject.tag));
+            //Debug.Log(String.Format("{0} entered in collision with {1}", coll.gameObject.tag, this.gameObject.tag));
             _playerMovement = coll.gameObject.GetComponent<PlayerMovement>();
 
             if (_playerMovement != null)
@@ -78,7 +78,7 @@ public class Trap : MonoBehaviour
         }
         else if (coll.gameObject.tag.Equals("Enemy"))
         {
-            Debug.Log(String.Format("{0} entered in collision with {1}", coll.gameObject.tag, this.gameObject.tag));
+            //Debug.Log(String.Format("{0} entered in collision with {1}", coll.gameObject.tag, this.gameObject.tag));
             _globalAttributes = coll.gameObject.GetComponent<GlobalAttributes>();
 
             if (_globalAttributes != null)
@@ -97,11 +97,11 @@ public class Trap : MonoBehaviour
     {
         if (coll.gameObject.tag.Equals("Player"))
         {
-            Debug.Log(String.Format("{0} exited from collision with {1}", coll.gameObject.tag, this.gameObject.tag));
+            //Debug.Log(String.Format("{0} exited from collision with {1}", coll.gameObject.tag, this.gameObject.tag));
         }
         else if (coll.gameObject.tag.Equals("Enemy"))
         {
-            Debug.Log(String.Format("{0} exited from collision with {1}", coll.gameObject.tag, this.gameObject.tag));
+            //Debug.Log(String.Format("{0} exited from collision with {1}", coll.gameObject.tag, this.gameObject.tag));
         }
     }
 
