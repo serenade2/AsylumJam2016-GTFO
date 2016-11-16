@@ -681,7 +681,7 @@ GameObject:
   - 212: {fileID: 19406165}
   - 61: {fileID: 19406166}
   - 50: {fileID: 19406167}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ChaiseSpriteSheet_1
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -747,7 +747,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.23, y: 0.26}
 --- !u!50 &19406167
 Rigidbody2D:
   serializedVersion: 2
@@ -764,7 +764,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &19568512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,7 +2321,7 @@ GameObject:
   - 212: {fileID: 51446131}
   - 61: {fileID: 51446132}
   - 50: {fileID: 51446133}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ChaiseSpriteSheet_3
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -2387,7 +2387,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.23, y: 0.26}
 --- !u!50 &51446133
 Rigidbody2D:
   serializedVersion: 2
@@ -2404,7 +2404,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &51948446
 GameObject:
   m_ObjectHideFlags: 0
@@ -24693,7 +24693,7 @@ GameObject:
   - 212: {fileID: 578480567}
   - 61: {fileID: 578480568}
   - 50: {fileID: 578480569}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ComodeSpriteSheet_0
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -24759,7 +24759,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.58, y: 0.28}
 --- !u!50 &578480569
 Rigidbody2D:
   serializedVersion: 2
@@ -24768,7 +24768,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 578480565}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -27119,7 +27119,7 @@ GameObject:
   - 212: {fileID: 627395923}
   - 61: {fileID: 627395924}
   - 50: {fileID: 627395925}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: cabinet_1
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -27185,7 +27185,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.55, y: 0.29}
 --- !u!50 &627395925
 Rigidbody2D:
   serializedVersion: 2
@@ -27194,7 +27194,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 627395921}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 4
   m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -28909,7 +28909,7 @@ GameObject:
   - 212: {fileID: 664328083}
   - 61: {fileID: 664328084}
   - 50: {fileID: 664328085}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Table
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -28973,9 +28973,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.05}
   serializedVersion: 2
-  m_Size: {x: 0.96, y: 0.64}
+  m_Size: {x: 0.96, y: 0.55}
 --- !u!50 &664328085
 Rigidbody2D:
   serializedVersion: 2
@@ -28984,7 +28984,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 664328081}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -28992,7 +28992,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &667991365
 GameObject:
   m_ObjectHideFlags: 0
@@ -30831,11 +30831,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.789635
+      value: 1.85
       objectReference: {fileID: 0}
     - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.21332729
+      value: 2.985
       objectReference: {fileID: 0}
     - target: {fileID: 4000011039063786, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -30879,12 +30879,21 @@ Prefab:
     - target: {fileID: 61000010974150982, guid: 56afc04fce477c346bc638163389e7d3,
         type: 2}
       propertyPath: m_Size.x
-      value: 0.01
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 61000010974150982, guid: 56afc04fce477c346bc638163389e7d3,
         type: 2}
       propertyPath: m_Size.y
-      value: 0.01
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011820950056, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000012428800428, guid: 56afc04fce477c346bc638163389e7d3,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56afc04fce477c346bc638163389e7d3, type: 2}
@@ -34311,7 +34320,7 @@ GameObject:
   - 212: {fileID: 829551556}
   - 61: {fileID: 829551557}
   - 50: {fileID: 829551558}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ChaiseSpriteSheet_2
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -34377,7 +34386,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.23, y: 0.26}
 --- !u!50 &829551558
 Rigidbody2D:
   serializedVersion: 2
@@ -34394,7 +34403,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &830464523
 GameObject:
   m_ObjectHideFlags: 0
@@ -43458,7 +43467,7 @@ GameObject:
   - 212: {fileID: 1055997818}
   - 61: {fileID: 1055997819}
   - 50: {fileID: 1055997820}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ChaiseSpriteSheet_0 (2)
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -43524,7 +43533,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.23, y: 0.26}
 --- !u!50 &1055997820
 Rigidbody2D:
   serializedVersion: 2
@@ -43541,7 +43550,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1057811250
 GameObject:
   m_ObjectHideFlags: 0
@@ -51299,7 +51308,7 @@ GameObject:
   - 212: {fileID: 1244848605}
   - 61: {fileID: 1244848606}
   - 50: {fileID: 1244848607}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: cabinet_0
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -51365,7 +51374,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.55, y: 0.29}
 --- !u!50 &1244848607
 Rigidbody2D:
   serializedVersion: 2
@@ -51374,7 +51383,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1244848603}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 4
   m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -55292,12 +55301,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000011820950056, guid: 56afc04fce477c346bc638163389e7d3,
     type: 2}
   m_PrefabInternal: {fileID: 723817141}
---- !u!114 &1323988786 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114000010104366402, guid: 56afc04fce477c346bc638163389e7d3,
-    type: 2}
-  m_PrefabInternal: {fileID: 723817141}
-  m_Script: {fileID: 11500000, guid: 912e4c8ca32424c49addeb1bb167100a, type: 3}
 --- !u!1 &1325590989
 GameObject:
   m_ObjectHideFlags: 0
@@ -70827,15 +70830,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
-    - target: {fileID: 1000012949672490, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
-      propertyPath: m_Name
-      value: A*
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
         type: 2}
-      propertyPath: target
+      propertyPath: player
       value: 
       objectReference: {fileID: 1606634049}
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 1394646421}
     - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
         type: 2}
       propertyPath: seeker
@@ -70843,33 +70847,37 @@ Prefab:
       objectReference: {fileID: 1394646421}
     - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
         type: 2}
-      propertyPath: rbodySeeker
-      value: 
-      objectReference: {fileID: 1394646414}
-    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
-        type: 2}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 1394646421}
-    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
-        type: 2}
-      propertyPath: player
+      propertyPath: target
       value: 
       objectReference: {fileID: 1606634049}
     - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
         type: 2}
-      propertyPath: globalAttributes
+      propertyPath: rbodySeeker
       value: 
-      objectReference: {fileID: 1323988786}
+      objectReference: {fileID: 1394646414}
     - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
         type: 2}
       propertyPath: EnemyGameObject
       value: 
       objectReference: {fileID: 1323988784}
-    - target: {fileID: 114000010210717070, guid: 195094e9740d8264f8d1bd66e75eefe5,
+    - target: {fileID: 1000012949672490, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
+      propertyPath: m_Name
+      value: A*
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
         type: 2}
-      propertyPath: SpeedIncreasePerMinute
-      value: 1
+      propertyPath: nodeRadius
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: unwalkableMask1.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012410137514, guid: 195094e9740d8264f8d1bd66e75eefe5,
+        type: 2}
+      propertyPath: unwalkableMask2.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 195094e9740d8264f8d1bd66e75eefe5, type: 2}
@@ -72561,6 +72569,16 @@ Prefab:
       propertyPath: Enemy
       value: 
       objectReference: {fileID: 1394646421}
+    - target: {fileID: 50000011320964978, guid: cf67202af546dd44d80873e3a4e38ea9,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000011320964978, guid: cf67202af546dd44d80873e3a4e38ea9,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf67202af546dd44d80873e3a4e38ea9, type: 2}
   m_IsPrefabParent: 0
@@ -77237,7 +77255,7 @@ GameObject:
   - 212: {fileID: 1869461200}
   - 61: {fileID: 1869461201}
   - 50: {fileID: 1869461202}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Table
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -77301,9 +77319,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.03}
   serializedVersion: 2
-  m_Size: {x: 0.96, y: 0.64}
+  m_Size: {x: 0.96, y: 0.55}
 --- !u!50 &1869461202
 Rigidbody2D:
   serializedVersion: 2
@@ -77312,7 +77330,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1869461198}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -77320,7 +77338,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1869571548
 GameObject:
   m_ObjectHideFlags: 0
@@ -80622,7 +80640,7 @@ GameObject:
   - 212: {fileID: 1952707448}
   - 61: {fileID: 1952707449}
   - 50: {fileID: 1952707450}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ChaiseSpriteSheet_0
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -80688,7 +80706,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.23, y: 0.26}
 --- !u!50 &1952707450
 Rigidbody2D:
   serializedVersion: 2
@@ -80705,7 +80723,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1954786138
 GameObject:
   m_ObjectHideFlags: 0
@@ -86193,7 +86211,7 @@ GameObject:
   - 212: {fileID: 2098142492}
   - 61: {fileID: 2098142493}
   - 50: {fileID: 2098142494}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ComodeSpriteSheet_1
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -86259,7 +86277,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.64, y: 0.32}
+  m_Size: {x: 0.58, y: 0.28}
 --- !u!50 &2098142494
 Rigidbody2D:
   serializedVersion: 2
@@ -86268,7 +86286,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098142490}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 4
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -88565,7 +88583,7 @@ GameObject:
   - 212: {fileID: 2146594674}
   - 61: {fileID: 2146594675}
   - 50: {fileID: 2146594676}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: ChaiseSpriteSheet_0 (1)
   m_TagString: Furniture
   m_Icon: {fileID: 0}
@@ -88631,7 +88649,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.23, y: 0.26}
 --- !u!50 &2146594676
 Rigidbody2D:
   serializedVersion: 2
@@ -88648,4 +88666,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

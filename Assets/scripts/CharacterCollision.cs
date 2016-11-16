@@ -18,7 +18,7 @@ public class CharacterCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.B) && touchedFurniture != null)
+        if ( touchedFurniture != null) //Input.GetKey(KeyCode.B) &&
         {
             Vector3 direction = transform.position - touchedFurniture.transform.position;
 
