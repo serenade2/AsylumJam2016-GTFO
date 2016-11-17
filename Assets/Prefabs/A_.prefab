@@ -56,6 +56,8 @@ MonoBehaviour:
   target: {fileID: 0}
   rbodySeeker: {fileID: 0}
   Speed: 0.2
+  SpeedIncreasePerMinute: 1
+  EnemyGameObject: {fileID: 0}
 --- !u!114 &114000012410137514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -73,4 +75,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   gridWorldSize: {x: 10, y: 10}
-  nodeRadius: 0.08
+  nodeRadius: 0.02

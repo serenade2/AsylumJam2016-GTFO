@@ -11,6 +11,7 @@ TagManager:
   - Trap
   - Enemy
   - WallCollider
+  - Furniture
   layers:
   - Default
   - TransparentFX
@@ -24,9 +25,9 @@ TagManager:
   - Wall
   - Room
   - Door
-  - Character
-  - 
-  - 
+  - Player
+  - Enemy
+  - Fourniture
   - 
   - 
   - 
