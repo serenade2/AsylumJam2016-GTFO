@@ -18,6 +18,16 @@ public class PlayerMovement : MonoBehaviour
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
+
+    void FixedUpdate()
+    {
+        Vector2 movement_vector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        if (!IsTrapped)
+        {
+            rbody.MovePosition(rbody.position + movement_vector * Time.fixedDeltaTime);
+        }
+    }
 	
 	void Update ()
     {
@@ -33,11 +43,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("isWalking", false);
-        }
-
-	    if (!IsTrapped)
-	    {
-            rbody.MovePosition(rbody.position + movement_vector * Time.deltaTime);
         }
 
         float verticalAxis = Input.GetAxisRaw("Vertical");
