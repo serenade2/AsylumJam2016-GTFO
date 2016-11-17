@@ -32960,7 +32960,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: "WASD or Arrows : Move                           \nM : Oil Slick\n    N
-    : Bear Trap\n          B : Push Objects"
+    : Bear Trap"
 --- !u!222 &779162896
 CanvasRenderer:
   m_ObjectHideFlags: 0
