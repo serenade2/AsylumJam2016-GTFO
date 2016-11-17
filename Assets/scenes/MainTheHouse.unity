@@ -32922,11 +32922,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1401666924}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -15, y: 0}
   m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &779162895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32953,15 +32953,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'M : Oil Slick
-
-    N : Bear Trap'
+  m_Text: "WASD or Arrows : Move                           \nM : Oil Slick\n    N
+    : Bear Trap\n          B : Push Objects"
 --- !u!222 &779162896
 CanvasRenderer:
   m_ObjectHideFlags: 0
